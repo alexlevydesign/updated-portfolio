@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .BlockGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .BlockCard {
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .BlockCard1 { grid-area: 1 / 1 / 2 / 2; }
+        .BlockCard2 { grid-area: 1 / 2 / 2 / 3; }
+        .BlockCard3 { grid-area: 2 / 1 / 3 / 3; }
+    </style>
+</head>
+<body>
+    <div class="BlockGrid">
+        <div class="BlockCard BlockCard1">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci repudiandae, ab libero magnam aspernatur blanditiis!</p>
+        </div>
+        <div class="BlockCard BlockCard2">
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci repudiandae, ab libero magnam aspernatur blanditiis!</p>
+        </div>
+        <div class="BlockCard BlockCard3">
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci repudiandae, ab libero magnam aspernatur blanditiis!</p>
+        </div>
+    </div>
+</body>
+</html>

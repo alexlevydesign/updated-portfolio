@@ -1,0 +1,858 @@
+/* #region GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    background: #E9E9E9;
+}
+img {
+    display: block;
+}
+b {
+    font-weight: 600;
+}
+.PrimaryButton {
+    border: none;
+    background-color: #0000ee;
+    color: #fff;
+    padding: 1rem 1.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+}
+.PrimaryButton:hover {
+    background-color: #00005e;
+    transition: .1s ease-in-out;
+}
+.PrimaryButton:not(:hover) {
+    background-color: #0000ee;
+    transition: .1s ease-in-out;
+}
+#skip {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 2px;
+    position: absolute;
+    left: -999px;
+    color: #000;
+    z-index: 999;
+}
+#skip:focus {
+    left: 10px;
+    top: 30px;
+}
+.SectionPadding {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.SectionPaddingLeftOnly {
+    padding-left: 8rem;
+    padding-right: 0;
+}
+.SmallPadding {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.SmallPaddingRight {
+    padding-right: 2rem;
+}
+.ClearPadding {
+    padding: 0;
+}
+.AlignedCards {
+    display: flex;
+    gap: 1rem;
+}
+.ParentColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.LargeGapColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.BigHeadingAndParagraph {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+/* .Column h1, .Column h2, .Column h3, .Column h4 {
+    margin-bottom: -.5rem;
+} */
+
+@media only screen and (max-width: 1300px) {
+    .SectionPadding, .SectionPaddingLeftOnly {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .SectionPadding, .SectionPaddingLeftOnly {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+/* #endregion GLOBAL */
+
+/* #region NAVBAR */
+
+@media only screen and (max-width: 850px) {
+    .NavBar {
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+    .NavBarLinks {
+        gap: 3rem !important;
+    }
+    .NavBarLogo {
+        /* display: flex;
+        width: 100%;
+        justify-content: center; */
+    }
+}
+@media only screen and (max-width: 400px) {
+    .NavBarLinksChild {
+        font-size: 1rem;
+    }
+    .NavBarLinks {
+        gap: 2rem !important;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .NavBarLinks {
+        gap: 1.5rem !important;
+    }
+}
+
+.NavBarLogo {
+        /* margin-left: 10vw; */
+        /* color: red; */
+        /* padding-right: 2vw; */
+        /* padding-top: 1em; */
+        /* padding-bottom: 0; */
+        /* height: ; */
+        padding: 0rem;
+        /* border-radius: 20; */
+        background-color: #0000ee;
+}
+.NavBarLogo img {
+        background-color: #0000ee;
+        /* padding-left: 2em; */
+        /* color: red; */
+        /* padding-right: 2em; */
+        /* padding-top: 2em; */
+        padding: 1rem;
+        height: 5rem;
+}
+.NavBarLogo a {
+font-size: 0;
+width: max-content;
+display: block;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 2rem;
+}
+.NavLinkHome {
+    display: none !important;
+}
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background: rgba( 233, 233, 233, 0.75);
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur( 26.5px );
+    -webkit-backdrop-filter: blur( 26.5px);
+}
+.NavBarLinks {
+    /* position: absolute;
+    right: 20%; */
+    font-weight: 700;
+    font-size: 1.125rem;
+    display: flex;
+    gap: 6rem;
+}
+.NavBarLinks a:link, .NavBarLinks a:visited, .NavBarLinks a:hover, .NavBarLinks a:active {
+    text-decoration: none;
+}
+.NavBarLinks a:link, .NavBarLinks a:visited {
+    color: #0000ee;
+}
+.NavBarLinks a:hover, .NavBarLinks a:active {
+    color: #00005e;
+    text-decoration: underline;
+}
+.NavBarLinksChild {
+    /* display: inline;
+    padding-left: 100px; */
+
+}
+/* #endregion NAVBAR */
+
+/* #region FOOTER */
+
+@media only screen and (max-width: 850px) {
+    .FooterDiv {
+        flex-direction: column;
+        align-items: center !important;
+        gap: 1rem;
+    }
+    .FooterMessage {
+        margin-right: 0 !important;
+    }
+    .FooterLinks {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+}
+
+footer {
+    background: #ffffff;
+    margin-top: 3.5rem;
+    padding: 2rem 0;
+    background: #e9e9e9;
+    box-shadow: 0px 2px 8px #00000057;
+    background-color: 25%;
+    background: rgba( 233, 233, 233, 0.75);
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur( 26.5px );
+    -webkit-backdrop-filter: blur( 26.5px);
+
+}
+footer a:hover, footer a:active {
+    color: #00005e;
+}
+.FooterDiv {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: .9rem;
+}
+.FooterDivParent {
+    display: flex;
+    justify-content: space-between;
+}
+.FooterMessage {
+    margin-right: auto;
+    font-weight: 500;
+    
+}
+.FooterMessage span {
+    width: 300px !important;
+}
+.FooterLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.LogoFooter {
+    max-width: 16px;
+}
+.LinkedinLogo {
+    width: 40px;
+}
+/* #endregion FOOTER */
+
+/* #region TYPOGRAPHY */
+h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    width:fit-content;
+    border-bottom: 4px solid #0000ee;
+    padding-bottom: 4px;
+    margin-right: 10%;
+    margin-top: 0;
+    line-height: 130%;
+    widows: 1;
+    padding-right: 0 !important;
+}
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0000ee;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+h4 {
+    font-size: 1.25rem ;
+    font-weight: 500;
+}
+p {
+    line-height: 140%;
+}
+:is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p, :is(.ParentColumn) > h3 + img, :is(.ParentColumn) > h4 + img {
+    margin-top: -.75rem; /* this takes the value of the gap property of the class .ParentColumn and subtracts the value applied in this margin-top property. This property needs to be negative, and the result the equation [.ParentColumn {gap: x}] + [:is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p] should ALWAYS equal the value of margin-top within the selector h3 + p, h4 + p. */
+}
+h3 + p, h4 + p {
+    margin-top: .25rem;
+}
+.ProjectBodySectionContent h3 {
+    margin-top: .5rem;
+}
+.ProjectTag {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.125rem;
+}
+.Link, .Link:visited {
+    color: #0000ee;
+    font-weight: 600;
+}
+.SmallH2 {
+    font-size: 1.75rem;
+}
+.ProjectCardInfo h3 {
+    font-size: 1.9rem;
+}
+
+/* #endregion TYPOGRAPHY */
+
+/* #region HOMEPAGE */
+#Projects {
+    margin-top: 2rem;
+    scroll-margin-top: 16vh;
+}
+.ProjectsHeadingHome {
+    padding-right: 0 !important;
+}
+/* #endregion HOMEPAGE */
+
+/* #region PROJECT CARDS */
+
+@media only screen and (max-width: 900px) {
+    .ProjectCard {
+        flex-direction: column-reverse !important;
+        padding: 2rem !important;
+        gap: 2rem;
+        overflow: unset !important;
+        max-height: unset !important;
+    }
+    .ProjectCardImage{
+        overflow: unset !important;
+    }
+}
+
+.ProjectsSection {
+    /* padding-top: 1.5rem; */
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr 1fr; */
+}
+.ProjectCard {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* flex-direction: column; */
+    /* gap: 1rem; */
+    /* box-shadow: 8px 8px 16px -2px rgba(82, 82, 82, 0.25) inset, -8px -8px 16px -2px rgba(82, 82, 82, 0.25) inset; */
+    background-color: #fff;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: initial;
+    max-height: 500px;
+    overflow: hidden;
+}
+.ProjectCard:hover {
+    background-color: #00005e;
+    transition: .3s ease-in-out;
+    color: #fff;
+}
+.ProjectCard:not(:hover) {
+    transition: .3s ease-in-out;
+    background-color: #fff;
+}
+.ProjectCard:hover .FeaturedTag {
+    color: white;
+    transition: .3s ease-in-out;
+}
+.ProjectCard:not(:hover) .FeaturedTag {
+    transition: .3s ease-in-out;
+    color: #0000ee;
+}
+.ProjectCardText {
+    /* flex: 40%; */
+    padding-right: 1rem;
+    /* width: 30rem; */
+    /* position:absolute; */
+    /* right: 4rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+}
+.TagsContainer {
+    display: flex;
+    gap: 1rem;
+}
+.FeaturedTag {
+    color: #0000ee;
+}
+.ProjectCardInfo {
+    display: flex;
+    flex-direction: column;
+    /* gap: .25rem; */
+}
+.ProjectCardImage {
+    overflow: hidden;
+}
+.ProjectCardImage img {
+    max-width: 100%;
+}
+/* #endregion PROJECT CARDS */
+
+/* #region CONTACT SECTION */
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    max-width: 100%;
+}
+.ContactForm input[type="text"] {
+    min-height: 2rem;
+    border-radius: .5rem;
+    border: 1px gray solid;
+    padding-left: .5rem;
+    font-size: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+.ContactForm .FormChild {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.FormMessageDiv textarea {
+    min-height: 8rem;
+    border: 1px gray solid;
+    border-radius: .5rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    padding-top: .5rem;
+}
+#Contact {
+    scroll-margin-top: 16vh;
+}
+/* #endregion CONTACT SECTION */
+
+/* #region PROJECT HERO SECTION */
+
+@media only screen and (max-width: 1100px) {
+    .ProjectHeroText {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1.25rem;
+    }
+    .ProjectHeroListContainer {
+        gap: .75rem !important;
+    }
+    .ProjectIntro {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .ProjectHeroListUL {
+        flex-direction: column;
+    }
+    .ProjectHeroListUL li {
+        border-bottom: #0000ee 1px solid;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        margin-top: 0 !important;
+        font-size: 1.1rem;
+        border-right: none !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .ProjectHeroList li:first-child {
+        padding-top: 0 !important;
+    }
+    .ProjectHeroList li:last-child {
+        padding-bottom: 0 !important;
+        border-bottom: none;
+    }
+    .ProjectHeroList {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+    }
+    .ProjectHeroListContainer {
+        gap: 3rem !important;
+        flex-direction: row !important;
+    }
+}
+
+/* .ProjectHeroImageShadow {
+    box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.5),
+                inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                width: 100%;
+                height: fit-content;
+} */
+.ProjectHeroImage img {
+    width: 100%;
+    /* box-shadow: 0px 0px 10px 10px #e9e9e9; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.5),
+                inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5); */
+
+
+}
+.ProjectHeroText {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 1rem;
+}
+.ProjectHeroDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ProjectHeroDescription p {
+    font-size: 1.2rem;
+}
+.ProjectHeroListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ProjectHeroListUL {
+    display: flex;
+    list-style: none;
+
+}
+.ProjectHeroListUL li {
+    border-right: #0000ee 1px solid;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-top: .5rem;
+    font-size: 1.1rem;
+}
+.ProjectHeroList li:first-child {
+    padding-left: 0;
+}
+.ProjectHeroList li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+
+/* #endregion PROJECT HERO SECTION */
+
+/* #region PROJECT INTRO */
+
+@media only screen and (max-width: 1100px) {
+    .ProjectIntro {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .ProjectIntro {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .ProjectIntro hr:first-child {
+        width: 100% !important;
+        margin-left: 0;
+    }
+    .ProjectIntro hr:last-child {
+    width: 100% !important;
+    align-self:flex-end;
+    }
+}
+.ProjectIntro{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: 2.5rem; /* Should be the same value as the gap property of .ProjectBody */
+    margin-bottom: 2.5rem; /* Should be the same value as the gap property of .ProjectBody */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.ProjectIntro hr {
+    height: 1px;
+    border: none;
+    background-color: #0000ee;
+}
+.ProjectIntro hr:first-child {
+    width: 50%;
+    margin-left: 0;
+}
+.ProjectIntro hr:last-child {
+width: 50%;
+align-self:flex-end;
+}
+/* #endregion PROJECT INTRO */
+
+/* #region PROJECT BODY */
+
+@media only screen and (max-width: 1300px) {
+    .ProjectBodySection {
+        gap: 3rem !important;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .ProjectBodySection {
+        display: flex !important;
+        flex-direction: column;
+        gap: 1.5rem !important;
+    }
+    .ProjectBody {
+        gap: 2rem !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .AlignedCards, .BlockGrid {
+        display: flex !important;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .ContentCard {
+        width: unset !important;
+    }
+    .TwoColGrid {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+#FinalDesignSection {
+    scroll-margin-top: 16vh;
+}
+
+.ProjectBody {
+display: flex;
+flex-direction: column;
+gap: 2.5rem; /* Should be the same values as the margin-top and margin-bottom property of .ProjectIntro */
+}
+.ProjectBodySection {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+}
+.ProjectBodySectionHeadings .StickyElement {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+.ProjectBodySectionContent {
+    flex-basis: 50%;
+}
+.ProjectBodyImage img {
+    max-width: 100%;
+    height: auto;
+}
+.ContentCard {
+    background-color: #fff;
+    padding: .5rem;
+    width: 50%;
+    border: 1px black solid;
+    /* border-left: #0000ee 2px solid; */
+    display: flex;
+    flex-direction: column;
+}
+.ThreeCardGrid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+.ThreeCardGrid div {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+}
+.ThreeCardGrid .ContentCard {
+    /* width: 100%; */
+}
+.BlockGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+.BlockGridOnlyTwoDivs {
+    display: flex;
+}
+
+.BlockCard {
+    background-color: #fff;
+    padding: .5rem;
+    /* width: 50%; */
+    border: 1px black solid;
+    /* border-left: #0000ee 2px solid; */
+    display: flex;
+    flex-direction: column;
+}   
+
+.BlockCard1 { grid-area: 1 / 1 / 2 / 2; }
+.BlockCard2 { grid-area: 1 / 2 / 2 / 3; }
+.BlockCard3 { grid-area: 2 / 1 / 3 / 3; }
+
+.TwoColGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.TwoColGrid img {
+    max-width: 100%;
+}
+
+/* #endregion PROJECT BODY */
+
+/* #region SLIDER */
+.Slideshow, .FirstSlide {
+    padding-bottom: 0em;
+}
+.Slideshow {
+    max-width: 100%;
+}
+.Slide, .FirstSlide {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.SlideTextContent {
+    flex-basis: 50%;
+}
+.SlideImage {
+    max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: #000 2px solid;
+  max-width: fit-content !important;
+}
+.SlideImage img {
+    max-width: 100%;
+}
+.SlideshowParent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 3em;
+  }
+.SlideshowArrows {
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    margin-top: .5em;
+    
+}
+.SlideshowArrows, .Slide {
+    max-width: 100%;
+}
+.SlideShowArrowChild {
+
+}
+  
+  .Slide {
+    display: none;
+  }
+  
+  .prev,
+  .next {
+  
+    width: auto;
+    
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0000ee;
+    display: block;
+  }
+  
+  .next {
+    margin-left: .5em;
+  }
+  .prev {
+    margin-right: .5em;
+  }
+  
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .FirstSlide {
+    display: flex;
+  }
+/* #endregion SLIDER */
+
+/* #region ABOUT PAGE */
+
+.AboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.AboutContent .BigHeadingAndParagraph {
+    /* max-width: 50%; */
+}
+.AboutImage img {
+    max-width: 100%;
+}
+.AboutPageParagraphGap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* #endregion ABOUT PAGE */
