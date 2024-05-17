@@ -16,6 +16,9 @@ body {
 img {
     display: block;
 }
+.ProjectMainSection img {
+    border: 1px solid #000;
+}
 b {
     font-weight: 600;
 }
@@ -296,20 +299,20 @@ h3 {
     font-weight: 600;
 }
 h4 {
-    font-size: 1.25rem ;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 p {
     line-height: 140%;
 }
 :is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p, :is(.ParentColumn) > h3 + img, :is(.ParentColumn) > h4 + img {
-    margin-top: -.75rem; /* this takes the value of the gap property of the class .ParentColumn and subtracts the value applied in this margin-top property. This property needs to be negative, and the result the equation [.ParentColumn {gap: x}] + [:is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p] should ALWAYS equal the value of margin-top within the selector h3 + p, h4 + p. */
+    margin-top: -1rem; /* this takes the value of the gap property of the class .ParentColumn and subtracts the value applied in this margin-top property. This property needs to be negative, and the result the equation [.ParentColumn {gap: x}] + [:is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p] should ALWAYS equal the value of margin-top within the selector h3 + p, h4 + p. */
 }
 h3 + p, h4 + p {
-    margin-top: .25rem;
+    margin-top: .5rem;
 }
 .ProjectBodySectionContent h3 {
-    margin-top: .5rem;
+    /* margin-top: .5rem; */
 }
 .ProjectTag {
     text-transform: uppercase;
@@ -323,6 +326,10 @@ h3 + p, h4 + p {
 }
 .SmallH2 {
     font-size: 1.75rem;
+}
+.Heading4 {
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 .ProjectCardInfo h3 {
     font-size: 1.9rem;
@@ -342,16 +349,42 @@ h3 + p, h4 + p {
 
 /* #region PROJECT CARDS */
 
+@media only screen and (max-width: 1000px) {
+    .ProjectTag {
+        font-size: 1rem;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .ProjectCard {
         flex-direction: column-reverse !important;
-        padding: 2rem !important;
+        padding: 1.2rem !important;
         gap: 2rem;
         overflow: unset !important;
         max-height: unset !important;
     }
     .ProjectCardImage{
         overflow: unset !important;
+    }
+    .ProjectCardText, .ProjectCardInfo {
+        align-items: center;
+        text-align: center;
+    }
+    .ProjectCardText {
+        max-width: 80%;
+        padding-right: unset;
+    }
+    .ProjectTag {
+        font-size: 1.125rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .ProjectCardText {
+        max-width: 100%;
+    }
+    .TagsContainer {
+        flex-direction: column;
+        gap: .25rem !important;
     }
 }
 
@@ -477,7 +510,15 @@ h3 + p, h4 + p {
         padding-right: 3rem !important;
     }
 }
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 700px) {
+    .ProjectHeroListUL li {
+        font-size: 1rem !important;
+    }
+    .ProjectHeroList {
+        margin-right: 1rem;
+    }
+} */
+@media only screen and (max-width: 550px) {
     .ProjectHeroListUL {
         flex-direction: column;
     }
@@ -492,16 +533,19 @@ h3 + p, h4 + p {
         padding-left: 0 !important;
     }
     .ProjectHeroList li:first-child {
-        padding-top: 0 !important;
+        /* padding-top: 0 !important; */
     }
     .ProjectHeroList li:last-child {
-        padding-bottom: 0 !important;
-        border-bottom: none;
+        /* padding-bottom: 0 !important;
+        border-bottom: none; */
+    }
+    .ProjectHeroList li:only-child {
+        border: none;
     }
     .ProjectHeroList {
         display: flex;
         flex-direction: column;
-        gap: .75rem;
+        gap: .5rem;
     }
     .ProjectHeroListContainer {
         gap: 3rem !important;
@@ -527,16 +571,21 @@ h3 + p, h4 + p {
 
 }
 .ProjectHeroText {
-    display: grid;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: 1fr 1.5fr;
+    /* grid-template-columns: 1fr .75fr; */
     margin-top: 1rem;
+    gap: 1rem;
 }
 .ProjectHeroDescription {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    /* flex-shrink: 10; */
+    flex: 1;
+    
+    
 }
 .ProjectHeroDescription p {
     font-size: 1.2rem;
@@ -545,6 +594,8 @@ h3 + p, h4 + p {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    /* flex-grow: 10; */
+    flex: 1;
 }
 .ProjectHeroListUL {
     display: flex;
@@ -632,6 +683,11 @@ align-self:flex-end;
     .ProjectBody {
         gap: 2rem !important;
     }
+    .FinalDesignImageContainer {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem !important;
+    }
 }
 @media only screen and (max-width: 700px) {
     .AlignedCards, .BlockGrid {
@@ -646,6 +702,7 @@ align-self:flex-end;
         display: flex !important;
         flex-direction: column !important;
     }
+    
 }
 
 #FinalDesignSection {
@@ -676,6 +733,9 @@ gap: 2.5rem; /* Should be the same values as the margin-top and margin-bottom pr
 .ProjectBodyImage img {
     max-width: 100%;
     height: auto;
+}
+.ProjectBodyImage h3 {
+    margin-bottom: .25rem;
 }
 .ContentCard {
     background-color: #fff;
@@ -731,11 +791,11 @@ gap: 2.5rem; /* Should be the same values as the margin-top and margin-bottom pr
 .TwoColGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 .TwoColGrid img {
     max-width: 100%;
 }
+
 
 /* #endregion PROJECT BODY */
 
