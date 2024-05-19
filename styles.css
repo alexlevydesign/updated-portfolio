@@ -91,6 +91,9 @@ b {
     flex-direction: column;
     gap: .5rem;
 }
+.NoBorder img {
+    border: none;
+}
 /* .Column h1, .Column h2, .Column h3, .Column h4 {
     margin-bottom: -.5rem;
 } */
@@ -772,6 +775,9 @@ gap: 2.5rem; /* Should be the same values as the margin-top and margin-bottom pr
 }
 .BlockGridOnlyTwoDivs {
     display: flex;
+}
+.BlockGridOnlyTwoDivs .BlockCard1, .BlockGridOnlyTwoDivs .BlockCard2 {
+    flex: 1;
 }
 
 .BlockCard {
