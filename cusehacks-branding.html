@@ -528,8 +528,9 @@
         threshold: [0.5]
     });
 
-    // Lazy load videos
+    // Ensure videos are paused and set to lazy load on page load
     videos.forEach(video => {
+        video.pause();
         video.setAttribute('preload', 'none');
         observer.observe(video);
     });
