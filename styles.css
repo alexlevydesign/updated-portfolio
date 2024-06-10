@@ -715,6 +715,10 @@ align-self:flex-end;
     scroll-margin-top: 16vh;
 }
 
+video {
+    max-width: 100%;
+}
+
 .ProjectBody {
 display: flex;
 flex-direction: column;
