@@ -94,6 +94,11 @@ b {
 .NoBorder img {
     border: none;
 }
+.SmallGap {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
 /* .Column h1, .Column h2, .Column h3, .Column h4 {
     margin-bottom: -.5rem;
 } */
