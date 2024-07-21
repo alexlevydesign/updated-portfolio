@@ -1,5 +1,5 @@
-// Get name of current page
-const currentPage = document.getElementsByTagName("title")[0].innerHTML;
+// Get name of current page by the text in the H1 tag
+const currentPage = document.getElementsByTagName("h1")[0].innerHTML;
 // console.log(currentPage);
 
 //array of UI & UX pages
