@@ -80,7 +80,7 @@ b {
 .ParentColumn {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
 }
 .LargeGapColumn {
     display: flex;
@@ -99,6 +99,13 @@ b {
     display: flex;
     flex-direction: column;
     gap: .25rem;
+}
+#FinalDesignSection h2 {
+    margin-bottom: -1.5rem;
+}
+.Row {
+    display: flex;
+    flex-direction: row;
 }
 /* .Column h1, .Column h2, .Column h3, .Column h4 {
     margin-bottom: -.5rem;
@@ -173,7 +180,7 @@ b {
         /* padding-right: 2em; */
         /* padding-top: 2em; */
         padding: 1rem;
-        height: 5rem;
+        height: 4.5rem;
 }
 .NavBarLogo a {
 font-size: 0;
@@ -221,6 +228,10 @@ nav {
     /* display: inline;
     padding-left: 100px; */
 
+}
+.CurrentPage a {
+    color: #00005e !important;
+    text-decoration: underline !important;
 }
 /* #endregion NAVBAR */
 
@@ -317,12 +328,18 @@ h4 {
 }
 p {
     line-height: 140%;
+    font-size: 1.1rem;
 }
 :is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p, :is(.ParentColumn) > h3 + img, :is(.ParentColumn) > h4 + img {
     margin-top: -1rem; /* this takes the value of the gap property of the class .ParentColumn and subtracts the value applied in this margin-top property. This property needs to be negative, and the result the equation [.ParentColumn {gap: x}] + [:is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p] should ALWAYS equal the value of margin-top within the selector h3 + p, h4 + p. */
 }
 h3 + p, h4 + p {
-    margin-top: .5rem;
+    margin-top: 1rem;
+}
+.ProjectBodySectionHeadings .StickyElement:has(h2 + p){
+    /* margin-bottom: 0 !important; */
+    gap: .75rem;
+    /* If a container for the text sections on the left column of a case study has only an h2 and a p tag (as opposed to an h2 and then a div with an h3 and p tag), then the spacing between the h2 and p tag will be .75rem. If there is a div with an h3 and p tag, then the spacing between the h2 and the div will be 1.25 rem (.75 gap + .5 margin-bottom) because the spacing between an h2 and p tag should be less than the spacing between an h2 and h3 tag. */
 }
 .ProjectBodySectionContent h3 {
     /* margin-top: .5rem; */
@@ -355,6 +372,7 @@ h3 + p, h4 + p {
 #Projects {
     margin-top: 2.5rem;
     scroll-margin-top: 16vh;
+    gap: 1.5rem;
 }
 .ProjectsHeadingHome {
     padding-right: 0 !important;
@@ -363,6 +381,11 @@ h3 + p, h4 + p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media only screen and (max-width: 1300px) {
+    p {
+        font-size: 1rem;
+    }
 }
 /* #endregion HOMEPAGE */
 
@@ -521,8 +544,13 @@ box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
     font-size: 1rem;
     padding-top: .5rem;
 }
+form .Row {
+    gap: .75rem;
+}
 #Contact {
     scroll-margin-top: 16vh;
+    gap: 1.5rem;
+    
 }
 /* #endregion CONTACT SECTION */
 
@@ -680,14 +708,16 @@ box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
     }
 }
 .ProjectIntro{
-    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: .75rem;
-    margin-top: 2.5rem; /* Should be the same value as the gap property of .ProjectBody */
-    margin-bottom: 2.5rem; /* Should be the same value as the gap property of .ProjectBody */
+    margin-top: 3.5rem; /* Should be the same value as the gap property of .ProjectBody */
+    margin-bottom: 3.5rem; /* Should be the same value as the gap property of .ProjectBody */
     padding-left: 20%;
     padding-right: 20%;
+}
+.ProjectIntro p {
+    font-size: 1.5rem;
 }
 .ProjectIntro hr {
     height: 1px;
@@ -776,13 +806,13 @@ video {
 .ProjectBody {
 display: flex;
 flex-direction: column;
-gap: 2.5rem; /* Should be the same values as the margin-top and margin-bottom property of .ProjectIntro */
+gap: 3.5rem; /* Should be the same values as the margin-top and margin-bottom property of .ProjectIntro */
 }
 .ProjectBodySection {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 1fr 2fr;
-    gap: 5rem;
+    grid-template-columns: .7fr 1fr;
+    gap: 8rem;
 }
 .ProjectBodySectionHeadings .StickyElement {
     position: sticky;
@@ -791,6 +821,12 @@ gap: 2.5rem; /* Should be the same values as the margin-top and margin-bottom pr
     flex-direction: column;
     gap: .75rem;
 }
+.ProjectBodySectionHeadings .StickyElement:has(h2+div) > h2 {
+    margin-bottom: .5rem; /* this selector selects the containers holding the text on the left column of the case study pages and if they have an h2 and a div together (as opposed to an h2 and a p tag), then it will make the margin-bottom of the h2 tag .5rem. */
+}
+/* .ProjectBodySectionHeadings .StickyElement > h2 {
+    margin-bottom: .5rem;
+} */
 .ProjectBodySectionContent {
     flex-basis: 50%;
 }
