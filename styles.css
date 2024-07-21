@@ -229,10 +229,28 @@ nav {
     padding-left: 100px; */
 
 }
+.CurrentPage {
+    /* display: flex;
+    flex-direction: column; */
+}
 .CurrentPage a {
     color: #00005e !important;
     text-decoration: underline !important;
 }
+/* .CurrentPage::after{
+    content:'';
+    height: 2px;
+    background-color: #0000ee;
+    display: inline-block;
+    top: 10%;
+    left: 4%;
+    border-radius: 20px;
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+} */
 /* #endregion NAVBAR */
 
 /* #region FOOTER */
