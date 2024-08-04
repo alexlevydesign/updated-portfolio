@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sections</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+        //Slider code start
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+document.querySelectorAll(".Slide").style.display = "flex"
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  const slides = document.querySelectorAll(".Slide");
+  const dots = document.querySelectorAll(".dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  
+}
+
+// Set the display style of the first slide to "block" by default
+const slides = document.querySelectorAll(".slide");
+slides[0].style.display = "flex";
+</script>
+</head>
+<body>
+    
+
+    <!-- NavBar -->
+
+    <nav>
+        <div class="NavBar SectionPadding">
+            <div class="NavBarLogo">
+                <a href="index.html"><img src="images/Lockup-white.svg" alt="Alex Levy"></a>
+            </div>
+            <div class="NavBarLinks">
+                <div class="NavBarLinksChild NavLinkHome NavLinkMargin"><a href="index.html">Home</a></div>
+                <!-- <div class="NavBarLinksChild NavLinkProjects NavLinkMargin"><a href="index.html#Projects">Projects</a></div> -->
+                <!-- <div class="NavBarLinksChild NavLinkContact NavLinkMargin"><a href="index.html#Contact">Contact</a></div> -->
+                <div class="NavBarLinksChild NavLinkAbout"><a href="index.html">UI & UX</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="graphic-design.html">Graphic Design</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="about.html">About</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+
+    <header>
+        <h1 class="SectionPadding">AI Financial Advisor</h1>
+        <div class="ProjectHeroText SectionPadding">
+            <div class="ProjectHeroListContainer">
+                <div class="ProjectHeroList">
+                    <h2 class="SmallH2">Roles</h2>
+                    <ul class="ProjectHeroListUL">
+                        <li>Team Lead</li>
+                        <li>Designer</li>
+                        <li>Researcher</li>
+                    </ul>
+                </div>
+                <div class="ProjectHeroList">
+                   <h2 class="SmallH2">Tools</h2>
+                    <ul class="ProjectHeroListUL">
+                        <li>Figma</li>
+                        <li>Mural</li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="ProjectHeroDescription">
+                <p>I led a team in designing an AI financial assistant chatbot that would be integrated into a bank's website where users could get answers to their financial questions and be directed to appropriate bank resources.</p>
+                <a href="#FinalDesignSection" class="PrimaryButton">Skip to final designs</a>
+            </div>
+        </div>
+            <div class="ProjectHeroImage">
+            <img src="images/ai-financial-advisor/hero-laptop.png" alt="AI financial advisor mockup">
+        </div>
+        
+       
+    </header>
+
+    <!-- Project Intro -->
+
+    <div class="ProjectIntro SectionPadding">
+        <hr>
+        <p>During my IBM internship, I sat in on a workshop with a major financial institution that wanted to explore IBM's generative AI solutions. Many problems and ideas were shared, but one in particular stood out to me: how could generative AI help people who have questions about complex and personal financial situations?</p>
+        <a href="#FinalDesignSection" class="PrimaryButton">Skip to final designs</a>
+        <hr>
+    </div>
+
+    <!-- Project Body Section, Half-Width Cards -->
+
+    <div class="ProjectBodySection SectionPadding">
+        <div class="ProjectBodySectionHeadings">
+            <div class="StickyElement">
+                <h2>Secondary research</h2>
+                <p>Because this wasn't an official client project, I wasn't given any resources to help me in conducting user research, but that didn't stop me from doing research to understand the user groups and potential challenges that they face.</p>
+            </div>
+        </div>
+        <div class="ProjectBodySectionContent ParentColumn">
+            <div class="AlignedCards">
+                <div class="ContentCard">
+                    <h3 class="Heading4">Retirement planning is overwhelming for many</h3>
+                    <p><b>37% of adults surveyed said they have not done any retirement planning, and 76% of that group says that they find planning for retirement overwhelming.</b> A trusted, accessible source of financial information could help this group start to make a plan.</p>
+                </div> 
+                <div class="ContentCard">
+                     <h3 class="Heading4">Many young adults turn to social media</h3>
+                     <p><b>One article said that 47% of young adult respondents use Reddit for financial information and advice.</b> This stood out to me because users looking for personal financial advice might appreciate the ability to stay anonymous while fostering personal connections.</p>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <!-- Project Body Section, Images with Headings -->
+
+    <div class="ProjectBodySection SectionPadding">
+        <div class="ProjectBodySectionHeadings">
+            <div class="StickyElement">
+                <h2>Talking to an expert</h2>
+                <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+            </div>
+        </div>
+        <div class="ProjectBodySectionContent ParentColumn">
+            <div class="ParentColumn">
+                <div class="ProjectBodyImage ParentColumn">
+                    <h3>Primary persona</h3>
+                    <img src="images/ai-financial-advisor/process-images/primary-persona.png" alt="The primary persona of a potential user of this application.">
+                </div>
+                <div class="ProjectBodyImage ParentColumn">
+                    <h3>Secondary persona</h3>
+                    <img src="images/ai-financial-advisor/process-images/secondary-persona.png" alt="The secondary persona for another potential user of this application.">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Project Body Section, Images Without Headings -->
+
+    <div class="ProjectBodySection SectionPadding">
+        <div class="ProjectBodySectionHeadings ParentColumn">
+            <div class="ParentColumn StickyElement">
+                <h2>Ease of input</h2>
+                <div>
+                    <h3>Version 1 design</h3>
+                    <p>To help the user to get the personalized answers they are looking for, I designed a feature that allows them to assign an importance level to specific parts of their question for the AI to focus on.</p>
+                </div>
+                <div>
+                    <h3>Version 2 design</h3>
+                    <p>I realized that people might have trouble explicitly quantifying the importance of parts of their question, so I redesigned the prompt field. Keeping in mind the goal of allowing users to get personalized answers, I used checkboxes with preset options that still gives the chatbot focused context.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ProjectBodySectionContent ParentColumn">
+            <div class="ProjectBodyImage ParentColumn">
+                <img src="images/ai-financial-advisor/process-images/Cropped-chatbot-v1.png" alt="A part of the chatbot design where the user can enter a prompt.">
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Body Section, Final Design Grid -->
+
+    <div class="SectionPadding ParentColumn" id="FinalDesignSection">
+        <h2>Final design</h2>
+        <div class="ParentColumn TwoColGrid">
+            <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+            <img src="images/ai-financial-advisor/final-screens/ChatbotConversation Revised.png" alt="The chatbot screen after prompting.">
+            <img src="images/ai-financial-advisor/final-screens/ChatbotModalScreenRevised.png" alt="A modal to edit the selected goal.">
+            <img src="images/ai-financial-advisor/final-screens/Dashboard.png" alt="A dashboard that has goals and resources.">
+
+        </div>
+    </div>
+
+    <!-- Project Body Section, Final Design Responsive Row and Column Layout -->
+
+    <h2>Final design</h2>
+
+                    <!-- Final Design Image 1 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Screen to enter a prompt</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Final Design Image 2 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Chatbot response screen</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotConversation Revised.png" alt="The chatbot screen after prompting.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Final Design Image 3 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Create goal modal</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotModalScreenRevised.png" alt="A modal to edit the selected goal.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Final Design Image 4 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Goals and resources dashboard</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/ai-financial-advisor/final-screens/Dashboard.png" alt="A dashboard that has goals and resources.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- Project Body Section, Grid Full Width Cards -->
+
+    <div class="SectionPadding ParentColumn">
+        <h2>Lessons learned</h2>
+        <div class="BlockGrid BlockGridOnlyTwoDivs">
+            <div class="BlockCard BlockCard1">
+                <h4>Think about the user and business value</h4>
+                <p>A mentor encouraged me to consider not only the user value, but also the business value.<br><br>I started to think about this project in terms of <b>how improving the financial planning experience of a bank's account holders will ultimately help the bank build customer loyalty and promote bank services.</b></p>
+            </div>
+            <div class="BlockCard BlockCard2">
+                <h4>Work within a design system</h4>
+                <p>By using IBM's design system, Carbon, for this project, I learned best practices for designing experiences using an existing design system. At first, I tended to detach components a lot, which is not the best practice.<br><br><b>As the project went on, I learned the importance of using the existing components properly in order to make the design and eventual development process smoother, faster, and more consistent.</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Body Section, Final Design Slider -->
+
+    <div class="SectionPaddingLeftOnly SmallPaddingRight">
+                <h2>Final design</h2>
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+
+                <div class="SlideshowParent">
+                
+                    <div class="Slideshow">
+                        <p>Use the arrows to view the next image. If you can't see the full image, try scrolling on it!</p>
+                        <div class="Slide FirstSlide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+                                </div>
+                                <p class="ImageNumber">1/4</p>  
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>I removed the ability to set the importance of different parts of the prompt because that would add more uncertainty to the AI response and add extra complexity for the user, who might not even know what parts of their financial situation are important to emphasize. Instead, I kept the overall idea of allowing the user to provide the AI with direction about what they want by giving them checkboxes to check depending on if they want advice on goals, resources, or budgeting.</p>
+                            </div>
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                 <div class="SlideImage">
+                                <img src="images/ai-financial-advisor/final-screens/ChatbotConversation Revised.png" alt="The chatbot screen after prompting.">
+                            </div>
+                            <p class="ImageNumber">2/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>In the original design, the chatbot would just return a paragraph. But a long block of text wouldn't really help someone to create financial goals or find resources. In the final design, I added links that the user can click to create a goal, be directed to resources, or set a budget.</p>
+                            </div>
+                           
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotModalScreenRevised.png" alt="A modal to edit the selected goal.">
+                                </div>
+                                <p class="ImageNumber">3/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>I considered making the create goal modal be a right sidebar instead, but after making that layout I realized that having a right sidebar along with the left sidebar made the interface too crowded. A right sidebar was also unnecessary because the user wouldn't be interacting with the content in the sidebar and the chatbot at the same time. I made this into a modal to help the user focus on the current task of tweaking the goal that they chose.</p>
+                            </div>  
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/Dashboard.png" alt="A dashboard that has goals and resources.">
+                                </div>
+                                <p class="ImageNumber">4/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>One of the other designers made a table view of this dashboard, and we decided to let the user choose whether they wanted a dashboard or tabular view.</p>
+                            </div>
+                            
+                            
+                        </div>
+
+    <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/CourseGoals.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">3/9</p>
+                            
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Requirements.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">4/9</p>
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Topics.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">5/9</p>
+                            
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/CourseChallenges.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">6/9</p>
+                            
+                        </div>
+                        
+                        
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Assessments Timeline Range.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">9/9</p>
+                            
+                        </div>
+    
+
+                        
+                        
+                
+                    </div>
+                    <div class="SlideshowArrows">
+                        <div class="SlideshowArrowChild">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        </div>
+                        <div class="SlideShowArrowChild">
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        
+                    </div>
+                    </div>
+    </div>
+
+
+    <!-- More Projects Section, UI & UX -->
+
+    <section>
+        <div id="Projects" class="SectionPadding ParentColumn">
+            <h2 class="ProjectsHeadingHome">More UI & UX projects</h2>
+            <p>Looking for <b>graphic design</b> projects? <a href="graphic-design.html" class="Link">Click here!</a></p>
+            <!-- <div class="ProjectsSection">
+                <div class="ProjectCard">
+                <div class="ProjectCardText">
+                    <p class="ProjectTag">UI & UX</p>
+                    <h3>AI Financial Advisor</h3>
+                    <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor.png" alt="Screens from the AI financial advisor design.">
+                </div>
+                
+            </div> 
+            </div> -->
+            <div class="ProjectsSection">
+            <a href="optimal-assessment.html" class="ProjectCard" id="Optimal Assessment">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag FeaturedTag">FEATURED</p>
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>Optimal Assessment</h3>
+                        <p>I won a business pitch competition with my prototype designed to help professors create courses for diverse learning styles.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/optimal-assessment-thumbnail.png" alt="AI financial advisor mockup">
+                </div>
+                
+            </a>
+            <a href="ai-financial-advisor.html" class="ProjectCard" id="AI Financial Advisor">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>AI Financial Advisor</h3>
+                        <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor-text-on-top.png" alt="AI financial advisor mockup">
+                </div>
+                
+            </a>
+            <a href="the-newshouse-redesign.html" class="ProjectCard" id="The Newshouse Redesign">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>The Newshouse Redesign</h3>
+                        <p>I redesigned a student news website with a focus on creating a modular layout.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/newshouse-text-on-top.png" alt="The Newshouse redesign displayed on a phone and a laptop.">
+                </div>
+                
+            </a>
+            </div>   
+        </div>
+    </section>
+
+
+    <!-- More Projects Section, Graphic design -->
+
+    <section>
+        <div id="Projects" class="SectionPadding ParentColumn">
+            <h2 class="ProjectsHeadingHome">More UI & UX projects</h2>
+            <p>Looking for <b>UI & UX</b> projects? <a href="index.html" class="Link">Click here!</a></p>
+            <!-- <div class="ProjectsSection">
+                <div class="ProjectCard">
+                <div class="ProjectCardText">
+                    <p class="ProjectTag">UI & UX</p>
+                    <h3>AI Financial Advisor</h3>
+                    <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor.png" alt="Screens from the AI financial advisor design.">
+                </div>
+                
+            </div> 
+            </div> -->
+            <div class="ProjectsSection">
+            <a href="optimal-assessment.html" class="ProjectCard" id="Optimal Assessment">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag FeaturedTag">FEATURED</p>
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>Optimal Assessment</h3>
+                        <p>I won a business pitch competition with my prototype designed to help professors create courses for diverse learning styles.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/optimal-assessment-thumbnail.png" alt="AI financial advisor mockup">
+                </div>
+                
+            </a>
+            <a href="ai-financial-advisor.html" class="ProjectCard" id="AI Financial Advisor">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>AI Financial Advisor</h3>
+                        <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor-text-on-top.png" alt="AI financial advisor mockup">
+                </div>
+                
+            </a>
+            <a href="the-newshouse-redesign.html" class="ProjectCard" id="The Newshouse Redesign">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>The Newshouse Redesign</h3>
+                        <p>I redesigned a student news website with a focus on creating a modular layout.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/newshouse-text-on-top.png" alt="The Newshouse redesign displayed on a phone and a laptop.">
+                </div>
+                
+            </a>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="FooterDiv SectionPadding">
+        <span class="FooterMessage">Site designed and coded by me! 😄</span>
+        <div class="FooterLinks">
+            <a href="mailto:alexlevy@columbus.rr.com" class="Email">alexlevy@columbus.rr.com</a>
+            <a href="https://www.linkedin.com/in/alexlevydesign/" target="_blank"><img src="images/linkedin-logo.svg" class="LinkedinLogo" alt="LinkedIn Logo"></a>
+        </div>
+    </div>
+    
+    
+    
+        </footer>
+
+        <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Financial Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+        //Slider code start
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+document.querySelectorAll(".Slide").style.display = "flex"
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  const slides = document.querySelectorAll(".Slide");
+  const dots = document.querySelectorAll(".dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  
+}
+
+// Set the display style of the first slide to "block" by default
+const slides = document.querySelectorAll(".slide");
+slides[0].style.display = "flex";
+</script>
+
+</head>
+<body>
+    <a id="skip" href="#content">Skip to Content</a>
+    <nav>
+        <div class="NavBar SectionPadding">
+            <div class="NavBarLogo">
+                <a href="index.html"><img src="images/Lockup-white.svg" alt="Alex Levy"></a>
+            </div>
+            <div class="NavBarLinks">
+                <div class="NavBarLinksChild NavLinkHome NavLinkMargin"><a href="index.html">Home</a></div>
+                <!-- <div class="NavBarLinksChild NavLinkProjects NavLinkMargin"><a href="index.html#Projects">Projects</a></div> -->
+                <!-- <div class="NavBarLinksChild NavLinkContact NavLinkMargin"><a href="index.html#Contact">Contact</a></div> -->
+                <div class="NavBarLinksChild NavLinkAbout"><a href="index.html">UI & UX</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="graphic-design.html">Graphic Design</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="about.html">About</a></div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="SectionPadding">Optimal Assessment</h1>
+        <div class="ProjectHeroText SectionPadding">
+            <div class="ProjectHeroListContainer">
+                <div class="ProjectHeroList">
+                    <h2 class="SmallH2">Roles</h2>
+                    <ul class="ProjectHeroListUL">
+                        <li>Designer</li>
+                        <li>Co-founder</li>
+                        <li>Researcher</li>
+                    </ul>
+                </div>
+                <div class="ProjectHeroList">
+                   <h2 class="SmallH2">Tools</h2>
+                    <ul class="ProjectHeroListUL">
+                        <li>Figma</li>
+                        <li>Figjam</li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="ProjectHeroDescription">
+                <p>I designed a course design application to help professors create courses for students with diverse learning styles and assessment preferences. My business partner and I won first place in a pitch competition with this project.</p>
+            </div>
+        </div>
+            <div class="ProjectHeroImage">
+            <img src="images/optimal-assessment/optimal-assessment-hero-final.png" alt="Optimal Assessment mockup">
+        </div>
+        
+       
+    </header>
+    <main class="ProjectMainSection">
+        <div class="ProjectIntro SectionPadding">
+            <hr>
+            <p>I worked with two other designers during a hackathon on an interface where students can list their preferred testing options (such as essays vs multiple choice) for the professor to see in a dashboard. Even though the other designers were not able to continue on with this project, I kept working on it after the hackathon.</p>
+            <a href="#FinalDesignSection" class="PrimaryButton">Skip to final designs</a>
+            <hr>
+        </div>
+        <div class="ProjectBody">
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings ParentColumn">
+                    <div class="ParentColumn StickyElement">
+                        <h2>Understanding professors' problems</h2>
+                        <p>I surveyed eight professors, asking them about their course design process and the challenges that they face designing courses.</p>
+                        <!-- <div>
+                            <h3>Version 1 design</h3>
+                            
+                        </div> -->
+                    </div>
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/optimal-assessment/ProcessGraphics/ChangeCourseDesignGraphic.png" alt="A heading that says: How often do you change the design\n of your course from semester to semester (excluding minor changes such as adjusting the schedule). Below the heading, text reads: 50% almost every semester, 37.5% sometimes, 12.5% often.">
+                    </div>
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/optimal-assessment/ProcessGraphics/ChallengesGraphic.png" alt="A heading that says: What challenges do professors face with course design. Below, there are 4 quotes. The first quote says: Finding an overall flow for the course — most content is not linear in application or operation, but we have to put it into a linear timeline. The second quote says: Working with outside clients on course projects, realistic timelines, working in student teams for project delivery. The third quote says: Maintaining continuity of material, adding rich assessments without overloading myself with grading tasks. The fourth quote says: Knowing what topics, exercises, etc. will work since each semester is different.">
+                    </div>
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/optimal-assessment/ProcessGraphics/HowDoGraphic.png" alt="A heading that says: How do professors design their courses. Below, there are 4 quotes. The first quote says: Sticky notes on my dining room table to sort and group various lessons/projects. The second quote says: I read blogs, journals, and articles daily and listen to podcasts. The third quote says: A Text Edit document to arrange all my notes and topics. The fourth quote says: A list of topics in [Microsoft] Word that I start with.">
+                    </div>
+
+                </div>
+            </div>
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings">
+                    <div class="StickyElement">
+                        <h2>Learning about learning</h2>
+                        <!-- <p>Because this wasn't an official client project, I wasn't given any resources to help me in conducting user research, but that didn't stop me from doing research to understand the user groups and potential challenges that they face.</p> -->
+                    </div>
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="AlignedCards">
+                        <div class="ContentCard">
+                            <h3 class="Heading4">Universal Design for Learning</h3>
+                            <p>Universal Design for Learning is an educational framework that flips the course design process on its head. <b>First you create learning goals, then you design engaging assessments, and you finish by designing lessons.</b></p>
+                        </div> 
+                        <div class="ContentCard">
+                             <h3 class="Heading4">Informing the information architecture</h3>
+                             <p>The Universal Design for Learning framework <b>provided a foundation for the information architecture of the eventual design.</b></p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings">
+                    <div class="StickyElement">
+                        <h2>Putting it all together</h2>
+                        <p>Before moving on, I reflected on what I learned about professors' goals and priorities.</p>
+                    </div>
+                    
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage NoBorder">
+                        <img src="images/optimal-assessment/ProcessGraphics/OptimalAssessmentPoints.png" alt="Summaries of professors' goals and priorities.">
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings">
+                    <div class="StickyElement">
+                        <h2>Mapping how professors design courses</h2>
+                        <p>I put together what I knew about the professors who would be using this course design application and made a user journey about what they would need to do to design an ideal course.</p>
+                    </div>
+                    
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage NoBorder">
+                        <img src="images/optimal-assessment/ProcessGraphics/user-journey-chart.png" alt="A user journey for professors designing a course.">
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings ParentColumn">
+                    <div class="ParentColumn StickyElement">
+                        <h2>Entering course elements</h2>
+                        <div>
+                            <h3>Version 1 design</h3>
+                            <p><b>Because a course can have many different elements (such as a long list of topics), I needed to design a component that would allow professors to continuously add entries to a list through user input.</b> My first iteration of this component duplicated the entire input field component each time the user added an entry.</p>
+                        </div>
+                        <div>
+                            <h3>Version 2 design</h3>
+                            <p>The professor found this confusing and had a hard time figuring out how to properly interact with the component. <b>To fix this, I redesigned the it so that instead of the entire input field being duplicated, the entry would just be listed as a tag under the input field.</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/optimal-assessment/ProcessGraphics/iteration-add-list.png" alt="Feature where a professor can add course elements.">
+                    </div>
+                </div>
+            </div>
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings ParentColumn">
+                    <div class="ParentColumn StickyElement">
+                        <h2>Forming connections between course elements</h2>
+                            <div>
+                                    <h3>Version 1 design</h3>
+                                    <p><b>Because professors have so many components that they need to keep track of in each of their courses, </b>I decided to design a screen where the professor could select the course components that apply to the assessment or lesson they are creating.</p>
+                            </div>
+                            <div>
+                                <h3>Version 2 design</h3>
+                                <p>The professor liked how she could view multiple aspects of her course in one place, however she wasn't a fan of the whiteboarding canvas. <b>While this was just one comment from a single user, it got me thinking about the fact that not all professors would find a whiteboarding canvas intuitive. </b>I changed this to a simple checklist where a professor can choose individual course aspects that they want to apply to a new assessment.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage ParentColumn">
+                      <img src="images/optimal-assessment/ProcessGraphics/iteration-connections.png" alt="Iterations I made of a feature where professors can organize their course elements.">
+                    </div>
+                </div>
+            </div>
+            <div class="SectionPadding ParentColumn" id="FinalDesignSection">
+                <h2>Final designs</h2>
+
+                    <!-- Final Design Image 1 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Courses screen</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/optimal-assessment/final-screens/MyCourses.png" alt="A screen where the courses are shown.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Final Design Image 2 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Course info screen</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/optimal-assessment/final-screens/ClassInfo.png" alt="The course info screen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Final Design Image 3 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Course dashboard</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/optimal-assessment/final-screens/CourseDashboard.png" alt="The course dashboard.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Final Design Image 4 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Assessment creation screen</h3>
+                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/optimal-assessment/final-screens/AssessmentCreation.png" alt="The assessment creation screen.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                <!-- <div class="ParentColumn TwoColGrid">
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotConversation Revised.png" alt="The chatbot screen after prompting.">
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotModalScreenRevised.png" alt="A modal to edit the selected goal.">
+                    <img src="images/ai-financial-advisor/final-screens/Dashboard.png" alt="A dashboard that has goals and resources.">
+
+                </div> -->
+            </div>
+            <!-- <div class="SectionPaddingLeftOnly SmallPaddingRight">
+                <h2>Final design</h2>
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+
+                <div class="SlideshowParent">
+                
+                    <div class="Slideshow">
+                        <p>Use the arrows to view the next image. If you can't see the full image, try scrolling on it!</p>
+                        <div class="Slide FirstSlide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+                                </div>
+                                <p class="ImageNumber">1/4</p>  
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>I removed the ability to set the importance of different parts of the prompt because that would add more uncertainty to the AI response and add extra complexity for the user, who might not even know what parts of their financial situation are important to emphasize. Instead, I kept the overall idea of allowing the user to provide the AI with direction about what they want by giving them checkboxes to check depending on if they want advice on goals, resources, or budgeting.</p>
+                            </div>
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                 <div class="SlideImage">
+                                <img src="images/ai-financial-advisor/final-screens/ChatbotConversation Revised.png" alt="The chatbot screen after prompting.">
+                            </div>
+                            <p class="ImageNumber">2/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>In the original design, the chatbot would just return a paragraph. But a long block of text wouldn't really help someone to create financial goals or find resources. In the final design, I added links that the user can click to create a goal, be directed to resources, or set a budget.</p>
+                            </div>
+                           
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotModalScreenRevised.png" alt="A modal to edit the selected goal.">
+                                </div>
+                                <p class="ImageNumber">3/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>I considered making the create goal modal be a right sidebar instead, but after making that layout I realized that having a right sidebar along with the left sidebar made the interface too crowded. A right sidebar was also unnecessary because the user wouldn't be interacting with the content in the sidebar and the chatbot at the same time. I made this into a modal to help the user focus on the current task of tweaking the goal that they chose.</p>
+                            </div>  
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/Dashboard.png" alt="A dashboard that has goals and resources.">
+                                </div>
+                                <p class="ImageNumber">4/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>One of the other designers made a table view of this dashboard, and we decided to let the user choose whether they wanted a dashboard or tabular view.</p>
+                            </div>
+                            
+                            
+                        </div>
+
+    <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/CourseGoals.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">3/9</p>
+                            
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Requirements.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">4/9</p>
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Topics.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">5/9</p>
+                            
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/CourseChallenges.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">6/9</p>
+                            
+                        </div>
+                        
+                        
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Assessments Timeline Range.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">9/9</p>
+                            
+                        </div>
+    
+
+                        
+                        
+                
+                    </div>
+                    <div class="SlideshowArrows">
+                        <div class="SlideshowArrowChild">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        </div>
+                        <div class="SlideShowArrowChild">
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        
+                    </div>
+                    </div>
+            </div> -->
+            <div class="SectionPadding ParentColumn">
+                <h2>Lessons learned</h2>
+                <div class="BlockGrid BlockGridOnlyTwoDivs">
+                    <div class="BlockCard BlockCard1">
+                        <h4>Use a consistent design system</h4>
+                        <p>One thing I learned from creating my own design system for this project is that <b>reusing elements across contexts helps with rapid iteration and creating a cohesive product.</b></p>
+                    </div>
+                    <div class="BlockCard BlockCard2">
+                        <h4>Working as the only designer</h4>
+                        <p><b>My partner is not a designer, so I was in charge of the user research, UX design, visual design, and content design. </b>As the only designer on this project, I had to stretch myself and my skills. This helped me grow as a designer, but also limited the project's potential since I didn't have another design perspective on the project. This is why I want to onboard another designer.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings">
+                    
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    
+                    <div class="ThreeCardGrid">
+                        <div class="ContentCard">
+                            <h4>Think about the user and business value</h4>
+                            <p>A mentor encouraged me to consider not only the user value, but also the business value.<br><br>As a result, I started to think about this project in terms of how improving the financial planning experience of a bank's account holders will ultimately help the bank build customer loyalty and promote bank services.</p>
+                        </div>
+                        <div class="ContentCard">
+                            <h4>Work within a design system</h4>
+                            <p>By using IBM's design system, Carbon, for this project, I learned best practices for designing experiences using an existing design system. At first, I tended to detach components a lot, which is not the best practice.<br><br>As the project went on, I learned the importance of using the existing components properly in order to make the development process smoother and to keep consistency in the design.</p>
+                        </div>
+                        <div class="ContentCard">
+                            <h4>Narrow the scope</h4>
+                            <p>
+                                While the other designers and I did our best to design an interface using best design system practices, we had to significantly narrow the scope of the final developed prototype that we submitted for the hackathon.<br><br>Despite this, our design thinking process allowed us to still develop a prototype that can meet user and business needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+        
+    </main>
+    <section>
+        <div id="Projects" class="SectionPadding ParentColumn">
+            <div class="ProjectsSectionHeader">
+                <h2 class="ProjectsHeadingHome">More UI & UX projects</h2>
+                <a href="graphic-design.html" class="PrimaryButton">Looking for graphic design projects? Click here!</a>
+            </div>
+            <!-- <div class="ProjectsSection">
+                <div class="ProjectCard">
+                <div class="ProjectCardText">
+                    <p class="ProjectTag">UI & UX</p>
+                    <h3>AI Financial Advisor</h3>
+                    <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor.png" alt="Screens from the AI financial advisor design.">
+                </div>
+                
+            </div> 
+            </div> -->
+            <div class="ProjectsSection">
+            <a href="optimal-assessment.html" class="ProjectCard" id="Optimal Assessment">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag FeaturedTag">FEATURED</p>
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>Optimal Assessment</h3>
+                        <p>I won a business pitch competition with my prototype designed to help professors create courses for diverse learning styles.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/optimal-assessment-thumbnail.png" alt="AI financial advisor mockup">
+                </div>
+                
+            </a>
+            <a href="ai-financial-advisor.html" class="ProjectCard" id="AI Financial Advisor">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>AI Financial Advisor</h3>
+                        <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor-text-on-top.png" alt="AI financial advisor mockup">
+                </div>
+                
+            </a>
+            <a href="the-newshouse-redesign.html" class="ProjectCard" id="The Newshouse Redesign">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">UI & UX</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>The Newshouse Redesign</h3>
+                        <p>I redesigned a student news website with a focus on creating a modular layout.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/newshouse-text-on-top.png" alt="The Newshouse redesign displayed on a phone and a laptop.">
+                </div>
+                
+            </a>
+            </div>   
+        </div>
+    </section>
+    <footer>
+    <div class="FooterDiv SectionPadding">
+    <span class="FooterMessage">Site designed and coded by me! 😄</span>
+    <div class="FooterLinks">
+        <a href="mailto:alexlevy@columbus.rr.com" class="Email">alexlevy@columbus.rr.com</a>
+        <a href="https://www.linkedin.com/in/alexlevydesign/" target="_blank"><img src="images/linkedin-logo.svg" class="LinkedinLogo" alt="LinkedIn Logo"></a>
+    </div>
+</div>
+
+
+
+    </footer>
+    <script src="index.js"></script>
+    <!-- <script src="image-expand.js"></script> -->
+    <script>
+    
+        // console.log(document.title);
+        // const pageTitle = document.title
+        const aiFinancialAdvisor = `<a id="AI Financial Advisor" class="ProjectCard" href="ai-financial-advisor.html">`
+
+        
+        const currentProject = document.getElementById("AI Financial Advisor");
+        console.log(document.getElementById("AI Financial Advisor"));
+    if (currentProject === aiFinancialAdvisor) {
+        currentProject.style.display = "none";
+    }
+        
+    </script>
+</body>
+</html>
+
+

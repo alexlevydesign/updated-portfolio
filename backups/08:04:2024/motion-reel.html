@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Reel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+        //Slider code start
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+document.querySelectorAll(".Slide").style.display = "flex"
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  const slides = document.querySelectorAll(".Slide");
+  const dots = document.querySelectorAll(".dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  
+}
+
+// Set the display style of the first slide to "block" by default
+const slides = document.querySelectorAll(".slide");
+slides[0].style.display = "flex";
+</script>
+
+</head>
+<body>
+    <a id="skip" href="#content">Skip to Content</a>
+    <nav>
+        <div class="NavBar SectionPadding">
+            <div class="NavBarLogo">
+                <a href="graphic-design.html"><img src="images/Lockup-white.svg" alt="Alex Levy"></a>
+            </div>
+            <div class="NavBarLinks">
+                <div class="NavBarLinksChild NavLinkHome NavLinkMargin"><a href="index.html">Home</a></div>
+                <!-- <div class="NavBarLinksChild NavLinkProjects NavLinkMargin"><a href="index.html#Projects">Projects</a></div> -->
+                <!-- <div class="NavBarLinksChild NavLinkContact NavLinkMargin"><a href="index.html#Contact">Contact</a></div> -->
+                <div class="NavBarLinksChild NavLinkAbout"><a href="index.html">UI & UX</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="graphic-design.html">Graphic Design</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="about.html">About</a></div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="SectionPadding">Motion Reel</h1>
+        <div class="ProjectHeroText SectionPadding">
+            <div class="ProjectHeroListContainer">
+                <div class="ProjectHeroList">
+                    <h2 class="SmallH2">Roles</h2>
+                    <div>
+                        <ul class="ProjectHeroListUL">
+                            <li>Designer</li>
+                            <li>Animator</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ProjectHeroList">
+                   <h2 class="SmallH2">Tools</h2>
+                   <div>
+                       <ul class="ProjectHeroListUL">
+                           <li>After Effects</li>
+                           <li>Premiere Pro</li>
+                           <li>Illustrator</li>
+                           <li>Photoshop</li>
+                       </ul>
+                   </div>
+                </div>
+            </div>
+            <!-- <div class="ProjectHeroDescription">
+                <p>This is a reel showcasing my motion design skills and projects.
+                </p>
+                <a href="#FinalDesignSection" class="PrimaryButton">Skip to final designs</a>
+            </div> -->
+        </div>
+            <!-- <div class="ProjectHeroImage">
+            <img src="images/type-specimen/type-specimen-hero.jpg" alt="A mockup of the IBM Plex Serif type specimen that I designed.">
+        </div> -->
+        
+       
+    </header>
+    <main class="ProjectMainSection">
+        <!-- <div class="ProjectIntro SectionPadding">
+            <hr>
+            <p>I learned about IBM's new corporate typeface superfamily, IBM Plex, as a participant in the design track of the IBM Accelerate Program. I chose to make a type specimen for the serif variation because I was intrigued by how it took influence from older typographic styles while still feeling contemporary enough to represent a modern technology company like IBM.</p>
+            <hr>
+        </div> -->
+        <div class="ProjectBody SectionPadding">
+            <div>
+                <div class="VideoWrapper">
+                    <iframe class="VideoFullWidth" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2QynOHgr5vg?si=a9KT3NNMkyDUQdy2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings">
+                    
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    
+                    <div class="ThreeCardGrid">
+                        <div class="ContentCard">
+                            <h4>Think about the user and business value</h4>
+                            <p>A mentor encouraged me to consider not only the user value, but also the business value.<br><br>As a result, I started to think about this project in terms of how improving the financial planning experience of a bank's account holders will ultimately help the bank build customer loyalty and promote bank services.</p>
+                        </div>
+                        <div class="ContentCard">
+                            <h4>Work within a design system</h4>
+                            <p>By using IBM's design system, Carbon, for this project, I learned best practices for designing experiences using an existing design system. At first, I tended to detach components a lot, which is not the best practice.<br><br>As the project went on, I learned the importance of using the existing components properly in order to make the development process smoother and to keep consistency in the design.</p>
+                        </div>
+                        <div class="ContentCard">
+                            <h4>Narrow the scope</h4>
+                            <p>
+                                While the other designers and I did our best to design an interface using best design system practices, we had to significantly narrow the scope of the final developed prototype that we submitted for the hackathon.<br><br>Despite this, our design thinking process allowed us to still develop a prototype that can meet user and business needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+        
+    </main>
+    <section>
+        <div id="Projects" class="SectionPadding ParentColumn">
+            <div class="ProjectsSectionHeader">
+                <h2 class="ProjectsHeadingHome">More graphic design projects</h2>
+                <a href="index.html" class="PrimaryButton">Looking for UI & UX projects? Click here!</a>
+            </div>
+            <!-- <div class="ProjectsSection">
+                <div class="ProjectCard">
+                <div class="ProjectCardText">
+                    <p class="ProjectTag">UI & UX</p>
+                    <h3>AI Financial Advisor</h3>
+                    <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor.png" alt="Screens from the AI financial advisor design.">
+                </div>
+                
+            </div> 
+            </div> -->
+            <div class="ProjectsSection">
+            <a href="cusehacks-branding.html" class="ProjectCard">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag FeaturedTag">FEATURED</p>
+                        <p class="ProjectTag">Branding</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>CuseHacks Branding</h3>
+                        <p>I developed a brand identity across print and digital for a student-run hackathon, creating a new logo, social media strategy, website, animations, posters, and more to expand our presence on campus.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/cusehacks-project-card.png" alt="CuseHacks social media posts.">
+                </div>
+                
+                
+            </a>
+            <a href="type-specimen.html" class="ProjectCard">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">Editorial design</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>Type Specimen</h3>
+                        <p>I designed a type specimen for the typeface IBM Plex Serif to showcase its unique qualities.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/type-specimen-project-card.png" alt="Type specimen mockup.">
+                </div>
+                
+            </a>
+            <a href="motion-reel.html" class="ProjectCard">
+                <div class="ProjectCardText">
+                    <div class="TagsContainer">
+                        <p class="ProjectTag">Motion Design</p>
+                    </div>
+                    <div class="ProjectCardInfo">
+                        <h3>Motion Reel</h3>
+                        <p>A reel showcasing my motion design skills and projects.</p>
+                    </div>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/motion-reel.png" alt="My logo and wordmark.">
+                </div>
+                
+            </a>
+            </div>   
+        </div>
+    </section>
+    <footer>
+    <div class="FooterDiv SectionPadding">
+    <span class="FooterMessage">Site designed and coded by me! 😄</span>
+    <div class="FooterLinks">
+        <a href="mailto:alexlevy@columbus.rr.com" class="Email">alexlevy@columbus.rr.com</a>
+        <a href="https://www.linkedin.com/in/alexlevydesign/" target="_blank"><img src="images/linkedin-logo.svg" class="LinkedinLogo" alt="LinkedIn Logo"></a>
+    </div>
+</div>
+
+
+
+    </footer>
+    <script src="index.js"></script>
+    <!-- <script src="image-expand.js"></script> -->
+    <script>
+    
+        // console.log(document.title);
+        // const pageTitle = document.title
+        const aiFinancialAdvisor = `<a id="AI Financial Advisor" class="ProjectCard" href="ai-financial-advisor.html">`
+
+        
+        const currentProject = document.getElementById("AI Financial Advisor");
+        console.log(document.getElementById("AI Financial Advisor"));
+    if (currentProject === aiFinancialAdvisor) {
+        currentProject.style.display = "none";
+    }
+        
+    </script>
+</body>
+</html>
+
+
