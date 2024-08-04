@@ -28,8 +28,9 @@ graphicDesignPages.forEach(page => {
 
 const projectsSection = document.querySelector(".ProjectsSection");
 
+if (projectsSection) {
 document.addEventListener("mousemove", (e) => {
     projectsSection.style.setProperty("--x", e.x + "px");
     projectsSection.style.setProperty("--y", e.y + "px");
   });
-
+}
