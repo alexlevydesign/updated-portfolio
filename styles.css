@@ -474,6 +474,9 @@ h3 + p, h4 + p {
     color: initial;
     max-height: 500px;
     overflow: hidden;
+    /* border: #0000ee 0px solid inset; */
+    outline: #0000ee 0px solid;
+    
     /* -webkit-box-shadow: 8px 4px 16px -9px rgba(0,0,0,0.25);
 -moz-box-shadow: 8px 4px 16px -9px rgba(0,0,0,0.25);
 box-shadow: 8px 4px 16px -9px rgba(0,0,0,0.25); */
@@ -493,7 +496,10 @@ transition: .3s ease-in-out;
     -webkit-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
 -moz-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
 box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
-transition: .3s ease-in-out;
+transition: .01s ease-in-out;
+/* border: #0000ee 1px solid inset; */
+outline: #0000ee 1px solid;
+
 
 
     
