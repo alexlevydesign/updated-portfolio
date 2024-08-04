@@ -26,3 +26,10 @@ graphicDesignPages.forEach(page => {
     }
 });
 
+const projectsSection = document.querySelector(".ProjectsSection");
+
+document.addEventListener("mousemove", (e) => {
+    projectsSection.style.setProperty("--x", e.x + "px");
+    projectsSection.style.setProperty("--y", e.y + "px");
+  });
+

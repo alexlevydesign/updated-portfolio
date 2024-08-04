@@ -481,20 +481,47 @@ box-shadow: 8px 4px 16px -9px rgba(0,0,0,0.25); */
 -webkit-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
 box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
+transition: .3s ease-in-out;
+
 }
 .ProjectCard:hover {
-    background-color: #00005e;
-    transition: .3s ease-in-out;
-    color: #fff;
+    /* background-color: #00005e; */
+    /* transition: .3s ease-in-out;
+    color: #fff; */
+    background-attachment: fixed;
+    background-image:radial-gradient(circle at var(--x, 0) var(--y, 0), rgba(0,14,84,0.18109250536151966) 0%, rgba(0,14,84,0) 100%);
+    -webkit-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
+-moz-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
+box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
+transition: .3s ease-in-out;
+
+
+    
 }
+/* .ProjectCard::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background-attachment: fixed;
+    background-image: radial-gradient(
+      circle at var(--x, 0) var(--y, 0),
+      rgba(0,14,84,0.18109250536151966) 0%
+      transparent 5rem
+    );
+    pointer-events: none;
+    z-index: -1;
+  } */
 .ProjectCard:not(:hover) {
     transition: .3s ease-in-out;
     background-color: #fff;
+    -webkit-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
+box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
 }
-.ProjectCard:hover .FeaturedTag {
+/* .ProjectCard:hover .FeaturedTag {
     color: white;
     transition: .3s ease-in-out;
-}
+} */
 .ProjectCard:not(:hover) .FeaturedTag {
     transition: .3s ease-in-out;
     color: #0000ee;
