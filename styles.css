@@ -559,6 +559,10 @@ box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
 }
 .ProjectCardImage {
     overflow: hidden;
+    padding: 2rem;
+}
+#OptimalAssessment .ProjectCardImage {
+    padding-bottom: 0;
 }
 .ProjectCardImage img {
     max-width: 100%;
@@ -623,6 +627,11 @@ form .Row {
         padding-right: 3rem !important;
     }
 }
+@media only screen and (max-width: 900px) {
+.ProjectCardText {
+    padding-right: 0;
+}
+}
 /* @media only screen and (max-width: 700px) {
     .ProjectHeroListUL li {
         font-size: 1rem !important;
@@ -632,6 +641,13 @@ form .Row {
     }
 } */
 @media only screen and (max-width: 550px) {
+    .ProjectCardImage {
+        overflow: hidden;
+        padding: .5rem;
+    }
+    #OptimalAssessment .ProjectCardImage {
+        padding-bottom: 0;
+    }
     .ProjectHeroListUL {
         flex-direction: column;
     }
