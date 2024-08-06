@@ -110,6 +110,11 @@ b {
 /* .Column h1, .Column h2, .Column h3, .Column h4 {
     margin-bottom: -.5rem;
 } */
+.ParentColumnGap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
 @media only screen and (max-width: 1300px) {
     .SectionPadding, .SectionPaddingLeftOnly {
@@ -331,7 +336,7 @@ h1 {
     padding-right: 0 !important;
 }
 h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #0000ee;
     line-height: 120%;
