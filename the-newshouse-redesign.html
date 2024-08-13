@@ -84,6 +84,8 @@ slides[0].style.display = "flex";
                    <h2 class="SmallH2">Tools</h2>
                     <ul class="ProjectHeroListUL">
                         <li>Figma</li>
+                        <li>FigJam</li>
+                        <li>Google Analytics</li>
                     </ul> 
                 </div>
             </div>
@@ -100,12 +102,13 @@ slides[0].style.display = "flex";
     <main class="ProjectMainSection">
         <div class="ProjectIntro SectionPadding">
             <hr>
-            <p>For a class, we were tasked with redesigning a student news website called the Newshouse. The professor who runs the site uses Webflow and Wordpress for the front end and backend, respectively, and wanted us to redesign the site to look more modern and be adaptable to the editorial decisions of the student journalists.</p>
+            <!-- <p>For a class, we were tasked with redesigning a student news website called the Newshouse. The professor who runs the site uses Webflow and Wordpress for the front end and backend, respectively, and wanted us to redesign the site to look more modern and be adaptable to the editorial decisions of the student journalists.</p> -->
+            <p>The Newshouse is a news website at Syracuse University intended to give student journalists experience writing for a real news publication and reporting on events across campus.<br><br>The director of the website wanted a redesign that gives student journalists more flexibility to change the layout based on editorial decisions, while also overhauling the overall design to be cleaner, more modern, and realistic to implement on the front end and the back end.</p>
             <a href="#FinalDesignSection" class="PrimaryButton">Skip to final designs</a>
             <hr>
         </div>
         <div class="ProjectBody">
-            <div class="ProjectBodySection SectionPadding">
+            <!-- <div class="ProjectBodySection SectionPadding">
                 <div class="ProjectBodySectionHeadings">
                     <div class="StickyElement">
                         <h2>Stakeholders and users</h2>
@@ -128,34 +131,89 @@ slides[0].style.display = "flex";
                        </div>
                      </div>
                 </div>
+            </div> -->
+            <div class="ParentColumn">
+                <h2 class="SectionPadding">Research</h2>
+                <div class="ProjectBodySection SectionPadding">
+                    <div class="ProjectBodySectionHeadings ParentColumn">
+                        <div class="StickyElement">
+                            <h3>He's a website manager, developer, AND a professor? Oh my!</h3>
+                            <div class="ParagraphGap">
+                                <p>I spoke to the website manager to get insights on what to focus on in the redesign.</p>
+                            </div>
+                            <!-- <div>
+                                <h3>Version 1 design</h3>
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="ProjectBodySectionContent ParentColumn">
+                        <div class="ProjectBodyImage ParentColumn">
+                            <img src="images/newshouse/process-images/newshouse-website-manager-overview.png" alt="Overview of the website manager.">
+                        </div>
+                        <!-- <div class="ProjectBodyImage ParentColumn">
+                            <img src="images/optimal-assessment/ProcessGraphics/HowDoGraphic.png" alt="A heading that says: How do professors design their courses. Below, there are 4 quotes. The first quote says: Sticky notes on my dining room table to sort and group various lessons/projects. The second quote says: I read blogs, journals, and articles daily and listen to podcasts. The third quote says: A Text Edit document to arrange all my notes and topics. The fourth quote says: A list of topics in [Microsoft] Word that I start with.">
+                        </div> -->
+    
+                    </div>
+                </div>
             </div>
             <div class="ProjectBodySection SectionPadding">
                 <div class="ProjectBodySectionHeadings ParentColumn">
-                    <div class="ParentColumn StickyElement">
-                        <h2>Section front views</h2>
-                        <div>
-                            <!-- <h3>The problem</h3> -->
-                            <p>The manager of the Newshouse said that users often come to a specific article through social media, read it, then leave without going to other articles or a section front.</p>
+                    <div class="StickyElement">
+                        <h3>Student journalists unfamiliar with Wordpress</h3>
+                        <div class="ParagraphGap">
+                            <p>I spoke to student journalists to get insights on what to focus on in the redesign.</p>
                         </div>
-                        <div>
-                            <!-- <h3>Analytics data</h3> -->
-                            <p>A pattern I noticed in the analytics data is that the section fronts on desktop have higher page view rankings than their counterparts on mobile.</p>
-                        </div>
-                        <p>One of the differences between the desktop and mobile views of the Newshouse is that on mobile, the section front pages are hidden behind a hamburger menu. That made me wonder if the mobile section fronts have lower page view rankings because they are not right in front of the viewer like they are on desktop.</p>
+                        <!-- <div>
+                            <h3>Version 1 design</h3>
+                            
+                        </div> -->
                     </div>
                 </div>
                 <div class="ProjectBodySectionContent ParentColumn">
                     <div class="ProjectBodyImage ParentColumn">
-                        <img src="images/newshouse/process-images/NewshousePageViewRankingChart.png" alt="Table showing that the section fronts on the desktop version of the Newshouse get higher traffic relative to other pages than the section fronts on the mobile version do.">
+                        <img src="images/newshouse/process-images/newshouse-student-journalist-overview.png" alt="Overview of the student journalists.">
                     </div>
+                    <!-- <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/optimal-assessment/ProcessGraphics/HowDoGraphic.png" alt="A heading that says: How do professors design their courses. Below, there are 4 quotes. The first quote says: Sticky notes on my dining room table to sort and group various lessons/projects. The second quote says: I read blogs, journals, and articles daily and listen to podcasts. The third quote says: A Text Edit document to arrange all my notes and topics. The fourth quote says: A list of topics in [Microsoft] Word that I start with.">
+                    </div> -->
+
                 </div>
             </div>
-            
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings ParentColumn">
+                    <div class="StickyElement">
+                        <h3>Potential design opportunities</h3>
+                        <div class="ParagraphGap">
+                            <p>After I observed student journalists go through the process of creating and uploading an article to the website, a few things stood out to me.</p>
+                        </div>
+                        <!-- <div>
+                            <h3>Version 1 design</h3>
+                            
+                        </div> -->
+                    </div>
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/newshouse/process-images/newshouse-mobile-headline.png" alt="Graphic showing a workaround student journalists have to do for mobile headlines.">
+                    </div>
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/newshouse/process-images/newshouse-article-tags.png" alt="Graphic showing article tags on the Newshouse.">
+                    </div>
+                    <!-- <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/optimal-assessment/ProcessGraphics/HowDoGraphic.png" alt="A heading that says: How do professors design their courses. Below, there are 4 quotes. The first quote says: Sticky notes on my dining room table to sort and group various lessons/projects. The second quote says: I read blogs, journals, and articles daily and listen to podcasts. The third quote says: A Text Edit document to arrange all my notes and topics. The fourth quote says: A list of topics in [Microsoft] Word that I start with.">
+                    </div> -->
+
+                </div>
+            </div>
             <div class="ProjectBodySection SectionPadding">
                 <div class="ProjectBodySectionHeadings">
                     <div class="StickyElement">
-                        <h2>User journeys</h2>
-                        <p>The website manager said that users often come to the site when they find an interesting article on social media. After being directly linked to and reading that article, they leave the site.</p>
+                        <h3>A primary user journey: mobile traffic from social media</h3>
+                        <div class="ParagraphGap">
+                            <p>The website manager said that users often come to the site when they find an interesting article on social media. After being directly linked to and reading that article, they leave the site.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="ProjectBodySectionContent ParentColumn">
@@ -174,26 +232,46 @@ slides[0].style.display = "flex";
             <div class="ProjectBodySection SectionPadding">
                 <div class="ProjectBodySectionHeadings ParentColumn">
                     <div class="ParentColumn StickyElement">
-                        <h2>Too many articles</h2>
-                        <!-- <div> -->
-                                <p>After showing the initial layout to the website manager, he said there were too many articles, especially with the inclusion of a button that loads more articles.</p>
-                        <!-- </div> -->
-                        <!-- <div> -->
-                            <p>Since the Newshouse only publishes a few articles per week at most, he didn't want there to be lots of older articles on the section fronts.</p>
-                        <!-- </div> -->
+                        <h3>Analyzing user behavior from analytics</h3>
+                        <div class="ParagraphGap">
+                            <p>The manager of the Newshouse said that users often come to a specific article on their phone through social media, read it, then leave without going to other articles or a section front.</p>
+                            <p>A pattern I noticed in the analytics data is that the section fronts on desktop have higher page view rankings than their counterparts on mobile.</p>
+                        <p>One of the differences between the desktop and mobile views of the Newshouse is that on mobile, the section front pages are hidden behind a hamburger menu. That made me wonder if the mobile section fronts have lower page view rankings because they are not right in front of the viewer like they are on desktop.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="ProjectBodySectionContent ParentColumn">
                     <div class="ProjectBodyImage ParentColumn">
-                        <img src="images/newshouse/process-images/newshouse-sports-section-front-wireframe.png" alt="Wireframe of my initial redesign of the Newshouse sports section front.">
+                        <img src="images/newshouse/process-images/NewshousePageViewRankingChart.png" alt="Table showing that the section fronts on the desktop version of the Newshouse get higher traffic relative to other pages than the section fronts on the mobile version do.">
+                    </div>
+                </div>
+            </div>
+            <div class="ParentColumn">
+                <h2 class="SectionPadding">Designing and iterating</h2>
+                <div class="ProjectBodySection SectionPadding">
+                    <div class="ProjectBodySectionHeadings ParentColumn">
+                        <div class="ParentColumn StickyElement">
+                            <h3>My wireframe had too many articles</h3>
+                            <div class="ParagraphGap">
+                                    <p>After showing my wireframe to the website manager, he said there were too many articles, especially with the inclusion of a button that loads more articles.</p>
+                                <p>Since the Newshouse only publishes a few articles per week at most, he didn't want there to be lots of older articles on the section fronts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProjectBodySectionContent ParentColumn">
+                        <div class="ProjectBodyImage ParentColumn">
+                            <img src="images/newshouse/process-images/newshouse-sports-section-front-wireframe.png" alt="Wireframe of my initial redesign of the Newshouse sports section front.">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="ProjectBodySection SectionPadding">
                 <div class="ProjectBodySectionHeadings ParentColumn">
-                    <div class="ParentColumn StickyElement">
-                        <h2>Modular blocks</h2>
-                        <p>The website manager wanted to implement Wordpress blocks to the website so that student journalists can change the layout depending on the editorial decisions they want to make. This formed the basis of the new modular components.</p>
+                    <div class="StickyElement">
+                        <h3>Designing different headers for different contexts</h3>
+                        <div class="ParagraphGap">
+                            <p>The website manager wanted to implement WordPress blocks on the website so that student journalists could change the layout based on their editorial decisions. I designed various templates for the section page header that student journalists can choose from, depending on the situation.</p>
+                        </div>
                             <!-- <div>
                                     <h3>Version 1 design</h3>
                                     
@@ -219,7 +297,9 @@ slides[0].style.display = "flex";
                         <div class="ProjectBodySectionHeadings">
                             <div class="StickyElement">
                                 <h3>Sports Section Front</h3>
-                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
                             </div>
                         </div>
                         <div class="ProjectBodySectionContent ParentColumn">
@@ -235,7 +315,9 @@ slides[0].style.display = "flex";
                         <div class="ProjectBodySectionHeadings">
                             <div class="StickyElement">
                                 <h3>Article</h3>
-                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
                             </div>
                         </div>
                         <div class="ProjectBodySectionContent ParentColumn">
@@ -251,7 +333,9 @@ slides[0].style.display = "flex";
                         <div class="ProjectBodySectionHeadings">
                             <div class="StickyElement">
                                 <h3>Live story</h3>
-                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
                             </div>
                         </div>
                         <div class="ProjectBodySectionContent ParentColumn">
@@ -267,7 +351,9 @@ slides[0].style.display = "flex";
                         <div class="ProjectBodySectionHeadings">
                             <div class="StickyElement">
                                 <h3>Search results</h3>
-                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
                             </div>
                         </div>
                         <div class="ProjectBodySectionContent ParentColumn">
@@ -283,7 +369,9 @@ slides[0].style.display = "flex";
                         <div class="ProjectBodySectionHeadings">
                             <div class="StickyElement">
                                 <h3>Contributor page</h3>
-                                <!-- <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p> -->
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
                             </div>
                         </div>
                         <div class="ProjectBodySectionContent ParentColumn">
@@ -418,12 +506,16 @@ slides[0].style.display = "flex";
                 <h2>Lessons learned</h2>
                 <div class="BlockGrid BlockGridOnlyTwoDivs">
                     <div class="BlockCard BlockCard1">
-                        <h4>Working with a client</h4>
-                        <p>This project showed me what it is like to work with a client and the importance of listening to different stakeholders, which in this case included the website manager, student journalists, and site users.</p>
+                        <h3 class="Heading4">Working with a client</h3>
+                        <div class="ParagraphGap">
+                            <p>This project showed me what it is like to work with a client and the importance of listening to different stakeholders, which in this case included the website manager, student journalists, and site users.</p>
+                        </div>
                     </div>
                     <div class="BlockCard BlockCard2">
-                        <h4>Combining qualitative and quantitative data</h4>
-                        <p>To understand the problems and constraints, I made use of Google Analytics data in addition to talking to users and student journalists. This combination of qualitative and quantitative data helped me create unique insights.</p>
+                        <h3 class="Heading4">Combining qualitative and quantitative data</h3>
+                        <div class="ParagraphGap">
+                            <p>To understand the problems and constraints, I made use of Google Analytics data in addition to talking to users and student journalists. This combination of qualitative and quantitative data helped me create unique insights.</p>
+                        </div>
                     </div>
                 </div>
             </div>
