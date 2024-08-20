@@ -354,7 +354,7 @@ h4, .Heading4 {
     font-size: 1.15rem;
     font-weight: 600;
 }
-p {
+p, .ParagraphGap ul {
     line-height: 140%;
     font-size: 1.1rem;
 }
