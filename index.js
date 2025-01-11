@@ -6,7 +6,7 @@ const currentPage = document.getElementsByTagName("title")[0].innerHTML;
 const uxPages = ["The Newshouse Redesign", "Typeface Library Tool", "Optimal Assessment", "AI Financial Advisor", "Government Data Finder"]
 
 //array of graphic design pages
-const graphicDesignPages = ["CuseHacks Branding", "Type Specimen", "Motion Reel", "Flavefull Branding"]
+const graphicDesignPages = ["CuseHacks Branding", "Type Specimen", "Motion Reel", "Flavefull Branding", "Daily Orange Graphics", "Map Design"]
 
 // Compare current page to array of all UX pages
 uxPages.forEach(page => {
