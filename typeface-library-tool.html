@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7P0FX2FG3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7P0FX2FG3G');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeface Library Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <script>
+        //Slider code start
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+document.querySelectorAll(".Slide").style.display = "flex"
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  const slides = document.querySelectorAll(".Slide");
+  const dots = document.querySelectorAll(".dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  
+}
+
+// Set the display style of the first slide to "block" by default
+const slides = document.querySelectorAll(".slide");
+slides[0].style.display = "flex";
+</script> -->
+
+</head>
+<body>
+    <a id="skip" href="#content">Skip to Content</a>
+    <nav>
+        <div class="NavBar SectionPadding">
+            <div class="NavBarLogo">
+                <a href="index.html"><img src="images/Lockup-white.svg" alt="Alex Levy"></a>
+            </div>
+            <div class="NavBarLinks">
+                <div class="NavBarLinksChild NavLinkHome NavLinkMargin"><a href="index.html">Home</a></div>
+                <!-- <div class="NavBarLinksChild NavLinkProjects NavLinkMargin"><a href="index.html#Projects">Projects</a></div> -->
+                <!-- <div class="NavBarLinksChild NavLinkContact NavLinkMargin"><a href="index.html#Contact">Contact</a></div> -->
+                <div class="NavBarLinksChild NavLinkAbout"><a href="index.html">UI & UX</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="graphic-design.html">Graphic Design</a></div>
+                <div class="NavBarLinksChild NavLinkAbout"><a href="about.html">About</a></div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="SectionPadding">Typeface Library Tool</h1>
+        <div class="ProjectHeroText SectionPadding">
+            <div class="ProjectHeroListContainer">
+                <div class="ProjectHeroList">
+                    <h2 class="SmallH2">Roles</h2>
+                    <ul class="ProjectHeroListUL">
+                        <li>Designer</li>
+                    </ul>
+                </div>
+                <div class="ProjectHeroList">
+                   <h2 class="SmallH2">Tools</h2>
+                    <ul class="ProjectHeroListUL">
+                        <li>Figma</li>
+                        <li>FigJam</li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="ProjectHeroDescription">
+                <p>I designed a typeface library tool to make it easier for junior designers to find, test, and compare typefaces.</p>
+            </div>
+        </div>
+            <div class="ProjectHeroImage">
+            <img src="images/typeface-library-tool/typeface-library-tool-hero.png" alt="Typeface library tool mockup.">
+        </div>
+        
+       
+    </header>
+    <main class="ProjectMainSection">
+        <div class="ProjectIntro SectionPadding">
+            <hr>
+            <!-- <p>For a class, we were tasked with redesigning a student news website called the Newshouse. The professor who runs the site uses Webflow and Wordpress for the front end and backend, respectively, and wanted us to redesign the site to look more modern and be adaptable to the editorial decisions of the student journalists.</p> -->
+            <p>I know from personal experience that finding the perfect typeface for a project can be difficult and time-consuming. In addition to combing through pages of different typefaces, designers often have to constantly switch between the typeface library and their design software to test how different typefaces look in the context of their project. Other designers I spoke with shared this sentiment, so I decided to redesign and improve the experience of searching for typefaces.</p>
+            <a href="#FinalDesignSection" class="PrimaryButton">Skip to final designs</a>
+            <hr>
+        </div>
+        <div class="ProjectBody">
+            <div class="ParentColumn">
+                <h2 class="SectionPadding">Research</h2>
+                <div class="ProjectBodySection SectionPadding">
+                    <div class="ProjectBodySectionHeadings ParentColumn">
+                        <div class="StickyElement">
+                            <h3>How do other designers find typefaces?</h3>
+                            <div class="ParagraphGap">
+                                <p>While I had specific improvements that I would personally want in the typeface-finding process, I wanted to know the workflows and problems that other designers have, since I am not designing a tool for just myself.</p>
+                            </div>
+                            <!-- <div>
+                                <h3>Version 1 design</h3>
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="ProjectBodySectionContent ParentColumn">
+                        <div class="ProjectBodyImage ParentColumn">
+                            <img src="images/typeface-library-tool/process-images/typeface-searching-secondary-research.png" alt="OVERVIEW — SECONDARY RESEARCH: The experience of choosing typefaces:
+
+                            1. Some designers choose typefaces based on &quot;vibes&quot;, while others do in-depth research.
+
+                            2. Designers with more experience are more likely to have extensive personal typeface collections organized in a professional typeface library application with tags.
+
+                            3. Newer designers sometimes feel frustrated when looking for typefaces — even when using services such as Google Fonts or Adobe Fonts.
+
+                            4. Designers have to sift through hundreds of different typefaces, comparing factors from the overall personality to the minute details of a specific glyph.
+                            
+                            5. Designers like to look at typefaces in the context of how it will be used, such as in a logo, headings on a website, or body copy on a brochure.">
+                        </div>
+                        <!-- <div class="ProjectBodyImage ParentColumn">
+                            <img src="images/optimal-assessment/ProcessGraphics/HowDoGraphic.png" alt="A heading that says: How do professors design their courses. Below, there are 4 quotes. The first quote says: Sticky notes on my dining room table to sort and group various lessons/projects. The second quote says: I read blogs, journals, and articles daily and listen to podcasts. The third quote says: A Text Edit document to arrange all my notes and topics. The fourth quote says: A list of topics in [Microsoft] Word that I start with.">
+                        </div> -->
+    
+                    </div>
+                </div>
+            </div>
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings ParentColumn">
+                    <div class="StickyElement">
+                        <h3>Potential user groups</h3>
+                        <div class="ParagraphGap">
+                            <p>After talking to other designers and doing secondary research, I settled on three potential user groups that go through the process of finding typefaces.</p>
+                        </div>
+                        <!-- <div>
+                            <h3>Version 1 design</h3>
+                            
+                        </div> -->
+                    </div>
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/typeface-library-tool/process-images/typeface-library-users.png" alt="Three groups of people choosing a typeface:
+                        Non-designers
+                        • A psychology student working on a presentation.
+                        • A small business owner making a flyer.
+                        New designers
+                        • A design student choosing a typeface for their design project.
+                        • A self-taught designer creating a logo for a local restaurant.
+                        • A recently-graduated designer working with their first client.
+                        Experienced designers
+                        • An experienced freelancer doing a full brand redesign
+                        • A senior designer at an ad agency working on a campaign.
+                        People who don't design often or
+                        professionally likely wouldn't find much use for a typeface library tool
+                        →
+                        User group I chose to focus on New designers often spend a lot of time looking for the perfect typeface, and could benefit from a tool that helps them do that.
+                        →
+                        Designers with a lot of experience are more likely to already have an organized, extensive library of typefaces and a good workflow.">
+                    </div>
+                    <!-- <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/optimal-assessment/ProcessGraphics/HowDoGraphic.png" alt="A heading that says: How do professors design their courses. Below, there are 4 quotes. The first quote says: Sticky notes on my dining room table to sort and group various lessons/projects. The second quote says: I read blogs, journals, and articles daily and listen to podcasts. The third quote says: A Text Edit document to arrange all my notes and topics. The fourth quote says: A list of topics in [Microsoft] Word that I start with.">
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings ParentColumn">
+                    <div class="StickyElement">
+                        <h3>Validating my user flow</h3>
+                        <div class="ParagraphGap">
+                            <p>Based on my research, I mapped out the user journey of a new designer searching for a typeface. To ensure my understanding of the process was correct, I showed it to some design students to see if it matched their experiences.</p>
+                        </div>
+                        <!-- <div>
+                            <h3>Version 1 design</h3>
+                            
+                        </div> -->
+                    </div>
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage ParentColumn">
+                        <img src="images/typeface-library-tool/process-images/typeface-library-as-is.png" alt="As-is user journey of a new designer's process when searching for a typeface.">
+                    </div>
+                </div>
+            </div>
+            <div class="ParentColumn">
+                <h2 class="SectionPadding">Key features and design iterations</h2>
+                <div class="ProjectBodySection SectionPadding">
+                    <div class="ProjectBodySectionHeadings ParentColumn">
+                        <div class="ParentColumn StickyElement">
+                            <h3>A search page built for easy scanning</h3>
+                            <div class="ParagraphGap AdditionalParagraphGap">
+                                <div>
+                                    <h4>Features</h4>
+                                    <p>After looking at the existing typeface library websites, there were some features that I thought might improve usability based on my research and user interviews, such as:</p>
+                                    <ul>
+                                        <li>More granular and specific filters that give correct and consistent results as well as fewer subjective filters, such as a filter for "fun" typefaces. This would give a designer more fine-tuned control over their results.</li>
+                                        <li>Options to filter for typefaces suited to particular mediums and types of design work.</li>
+                                        <li>A way to control the settings for how the sample text is displayed (e.g. the line height, the weight, etc.) to allow a designer to quickly see if a certain typeface works in the context that they need.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>User testing</h4>
+                                    <p>When I tested this interface with a user, she said that it was a little cramped, and would rather have more room for the typefaces themselves. Based on that feedback, I removed the right sidebar and added a switch to the left sidebar that would display the content formerly on the right.</p>
+                                </div>
+                                    
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProjectBodySectionContent ParentColumn">
+                        <div class="ProjectBodyImage ParentColumn">
+                            <img src="images/typeface-library-tool/process-images/typeface-library-search-page-iterations.png" alt="The search page I designed before and after user testing.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings ParentColumn">
+                    <div class="StickyElement">
+                        <h3>Turning a filter into a feature</h3>
+                        <div class="ParagraphGap AdditionalParagraphGap">
+                            <div>
+                                <h4>Before user testing</h4>
+                                <p>Since one of the biggest factors in the typeface a designer chooses is the type of design work they are doing, I added that to the filters to help designers narrow down their search.</p>
+                            </div>
+                            <div>
+                                <h4>User feedback</h4>
+                                    <p>The designer I tested with said that, while she liked the idea of being able to easily find typefaces that are good for specific types of design work, she wondered what would happen if she selected a filter in the "design work" section that logically wouldn't make sense alongside a selected filter in another section.</p>
+                            </div>
+                            <div>
+                                <h4>My solution</h4>
+                                    <p>Instead of having the type of design work as a single filter, I implemented presets for specific combinations of filters. This would make it easier for a designer to quickly find typefaces suited for certain types of design work while ensuring that the user doesn't get zero search results since the filters are predefined.</p>
+                            </div>
+                        </div>
+                            <!-- <div>
+                                    <h3>Version 1 design</h3>
+                                    
+                            </div> -->
+                            <!-- <div>
+                                <h3>Version 2 design</h3>
+                                <p>Instead of having the chatbot return a paragraph of text like existing chatbots already do, I decided to split the response up into three categories, helping the user easily understand the information. This also provides an opportunity to direct the user towards bank services that they might not know about.</p>
+                        </div> -->
+                    </div>
+                    
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    <div class="ProjectBodyImage ParentColumn">
+                      <img src="images/typeface-library-tool/process-images/typeface-library-templates-iterations.png" alt="The design work filter before user testing, and the filter templates feature after user testing.">
+                    </div>
+                </div>
+            </div>
+            <div class="SectionPadding ParentColumn" id="FinalDesignSection">
+                <h2>Final designs</h2>
+
+                    <!-- Final Design Image 1 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Typeface search page</h3>
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/typeface-library-tool/final-designs/FontSearchPage.png" alt="The typeface search page.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Final Design Image 2 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Typeface info modal</h3>
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/typeface-library-tool/final-designs/FontInfoModal.png" alt="The typeface info modal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Final Design Image 3 -->
+                    <div class="ProjectBodySection FinalDesignImageContainer">
+                        <div class="ProjectBodySectionHeadings">
+                            <div class="StickyElement">
+                                <h3>Typeface playground page</h3>
+                                <!-- <div class="ParagraphGap">
+                                    <p>I talked to an expert on the banking industry and did secondary research to understand the user groups along with the problems they have. He said there are four main groups of users but emphasized that there are two groups who face the biggest challenges:</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="ProjectBodySectionContent ParentColumn">
+                            <div class="ParentColumn">
+                                <div class="ProjectBodyImage ParentColumn">
+                                    <img src="images/typeface-library-tool/final-designs/FontPlaygroundPage.png" alt="The typeface playground page.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                <!-- <div class="ParentColumn TwoColGrid">
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotConversation Revised.png" alt="The chatbot screen after prompting.">
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotModalScreenRevised.png" alt="A modal to edit the selected goal.">
+                    <img src="images/ai-financial-advisor/final-screens/Dashboard.png" alt="A dashboard that has goals and resources.">
+
+                </div> -->
+            </div>
+            <!-- <div class="SectionPaddingLeftOnly SmallPaddingRight">
+                <h2>Final design</h2>
+                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+
+                <div class="SlideshowParent">
+                
+                    <div class="Slideshow">
+                        <p>Use the arrows to view the next image. If you can't see the full image, try scrolling on it!</p>
+                        <div class="Slide FirstSlide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotHome.png" alt="The chatbot screen before prompting.">
+                                </div>
+                                <p class="ImageNumber">1/4</p>  
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>I removed the ability to set the importance of different parts of the prompt because that would add more uncertainty to the AI response and add extra complexity for the user, who might not even know what parts of their financial situation are important to emphasize. Instead, I kept the overall idea of allowing the user to provide the AI with direction about what they want by giving them checkboxes to check depending on if they want advice on goals, resources, or budgeting.</p>
+                            </div>
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                 <div class="SlideImage">
+                                <img src="images/ai-financial-advisor/final-screens/ChatbotConversation Revised.png" alt="The chatbot screen after prompting.">
+                            </div>
+                            <p class="ImageNumber">2/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>In the original design, the chatbot would just return a paragraph. But a long block of text wouldn't really help someone to create financial goals or find resources. In the final design, I added links that the user can click to create a goal, be directed to resources, or set a budget.</p>
+                            </div>
+                           
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/ChatbotModalScreenRevised.png" alt="A modal to edit the selected goal.">
+                                </div>
+                                <p class="ImageNumber">3/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>I considered making the create goal modal be a right sidebar instead, but after making that layout I realized that having a right sidebar along with the left sidebar made the interface too crowded. A right sidebar was also unnecessary because the user wouldn't be interacting with the content in the sidebar and the chatbot at the same time. I made this into a modal to help the user focus on the current task of tweaking the goal that they chose.</p>
+                            </div>  
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideVisualContent">
+                                <div class="SlideImage">
+                                    <img src="images/ai-financial-advisor/final-screens/Dashboard.png" alt="A dashboard that has goals and resources.">
+                                </div>
+                                <p class="ImageNumber">4/4</p>
+                            </div>
+                            <div class="SlideTextContent">
+                                <p>One of the other designers made a table view of this dashboard, and we decided to let the user choose whether they wanted a dashboard or tabular view.</p>
+                            </div>
+                            
+                            
+                        </div>
+
+    <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/CourseGoals.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">3/9</p>
+                            
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Requirements.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">4/9</p>
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Topics.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">5/9</p>
+                            
+                        </div>
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/CourseChallenges.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">6/9</p>
+                            
+                        </div>
+                        
+                        
+                        <div class="Slide">
+                            <div class="SlideImage">
+                                <img src="images/optimal-assessment/pngs/Assessments Timeline Range.png" alt="A screen from Optimal Assessment">
+                            </div>
+                            <p class="ImageNumber">9/9</p>
+                            
+                        </div>
+    
+
+                        
+                        
+                
+                    </div>
+                    <div class="SlideshowArrows">
+                        <div class="SlideshowArrowChild">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        </div>
+                        <div class="SlideShowArrowChild">
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        
+                    </div>
+                    </div>
+            </div> -->
+            <div class="SectionPadding ParentColumn">
+                <h2>Lessons learned</h2>
+                <div class="BlockGrid BlockGridOnlyTwoDivs">
+                    <div class="BlockCard BlockCard1">
+                        <h3 class="Heading4">Think about the technology</h3>
+                        <div class="ParagraphGap">
+                            <p>While I didn't develop this into a live app, I did think about some of the technical constraints that I might face if I were to do that, such as how to load all the typefaces without slowing down the application.</p>
+                        </div>
+                    </div>
+                    <div class="BlockCard BlockCard2">
+                        <h3 class="Heading4">Information overload</h3>
+                        <div class="ParagraphGap">
+                            <p>After doing user testing, one of the main pieces of feedback was that there was too much information displayed on each screen. That showed me that not everything always needs to be displayed in the same place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="ProjectBodySection SectionPadding">
+                <div class="ProjectBodySectionHeadings">
+                    
+                </div>
+                <div class="ProjectBodySectionContent ParentColumn">
+                    
+                    <div class="ThreeCardGrid">
+                        <div class="ContentCard">
+                            <h4>Think about the user and business value</h4>
+                            <p>A mentor encouraged me to consider not only the user value, but also the business value.<br><br>As a result, I started to think about this project in terms of how improving the financial planning experience of a bank's account holders will ultimately help the bank build customer loyalty and promote bank services.</p>
+                        </div>
+                        <div class="ContentCard">
+                            <h4>Work within a design system</h4>
+                            <p>By using IBM's design system, Carbon, for this project, I learned best practices for designing experiences using an existing design system. At first, I tended to detach components a lot, which is not the best practice.<br><br>As the project went on, I learned the importance of using the existing components properly in order to make the development process smoother and to keep consistency in the design.</p>
+                        </div>
+                        <div class="ContentCard">
+                            <h4>Narrow the scope</h4>
+                            <p>
+                                While the other designers and I did our best to design an interface using best design system practices, we had to significantly narrow the scope of the final developed prototype that we submitted for the hackathon.<br><br>Despite this, our design thinking process allowed us to still develop a prototype that can meet user and business needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+        
+    </main>
+    <section>
+        <div id="Projects" class="SectionPadding ParentColumn">
+            <div class="ProjectsSectionHeader">
+                <h2 class="ProjectsHeadingHome">More UI & UX projects</h2>
+                <a href="graphic-design.html" class="PrimaryButton">Looking for graphic design projects? Click here!</a>
+            </div>
+            <!-- <div class="ProjectsSection">
+                <div class="ProjectCard">
+                <div class="ProjectCardText">
+                    <p class="ProjectTag">UI & UX</p>
+                    <h3>AI Financial Advisor</h3>
+                    <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                </div>
+                <div class="ProjectCardImage">
+                    <img src="images/project-cards/ai-financial-advisor.png" alt="Screens from the AI financial advisor design.">
+                </div>
+                
+            </div> 
+            </div> -->
+            <div class="ProjectsSection">
+                <a href="government-data-finder.html" class="ProjectCard" id="OptimalAssessment">
+                    <div class="ProjectCardText">
+                        <div class="TagsContainer">
+                            <p class="ProjectTag FeaturedTag">FEATURED</p>
+                            <p class="ProjectTag">UI & UX</p>
+                        </div>
+                        <div class="ProjectCardInfo">
+                            <h3>Government Data Finder</h3>
+                            <p>I designed a tool to help students and professionals find government data while maintaining good data practices.</p>
+                        </div>
+                    </div>
+                    <div class="ProjectCardImage">
+                        <img src="images/project-cards/gov-data-finder-thumbnail.png" alt="Government data finder tool mockup.">
+                    </div>
+                    
+                </a>
+                <a href="the-newshouse-redesign.html" class="ProjectCard">
+                    <div class="ProjectCardText">
+                        <div class="TagsContainer">
+                            <p class="ProjectTag">UI & UX</p>
+                        </div>
+                        <div class="ProjectCardInfo">
+                            <h3>The Newshouse Redesign</h3>
+                            <p>I redesigned a student news website with a focus on creating a modular layout.</p>
+                        </div>
+                    </div>
+                    <div class="ProjectCardImage">
+                        <img src="images/project-cards/newshouse-text-on-top.png" alt="The Newshouse redesign displayed on a phone and a laptop.">
+                    </div>
+                    
+                </a>
+                <a href="ai-financial-advisor.html" class="ProjectCard">
+                    <div class="ProjectCardText">
+                        <div class="TagsContainer">
+                            <p class="ProjectTag">UI & UX</p>
+                        </div>
+                        <div class="ProjectCardInfo">
+                            <h3>AI Financial Advisor</h3>
+                            <p>I led a team in designing the interface for an AI financial advisor for an internal IBM competition.</p>
+                        </div>
+                    </div>
+                    <div class="ProjectCardImage">
+                        <img src="images/project-cards/ai-financial-advisor-text-on-top.png" alt="AI financial advisor mockup.">
+                    </div>
+                    
+                </a>
+                <a href="optimal-assessment.html" class="ProjectCard" id="OptimalAssessment">
+                    <div class="ProjectCardText">
+                        <div class="TagsContainer">
+                            <p class="ProjectTag">UI & UX</p>
+                        </div>
+                        <div class="ProjectCardInfo">
+                            <h3>Optimal Assessment</h3>
+                            <p>I won a business pitch competition with my prototype designed to help professors create courses for diverse learning styles.</p>
+                        </div>
+                    </div>
+                    <div class="ProjectCardImage">
+                        <img src="images/project-cards/optimal-assessment-thumbnail.png" alt="Optimal Assessment Mockup.">
+                    </div>
+                    
+                </a>   
+        </div>
+    </section>
+    <footer>
+    <div class="FooterDiv SectionPadding">
+    <span class="FooterMessage">Site designed and coded by me! 😄</span>
+    <div class="FooterLinks">
+        <a href="mailto:alexlevy@columbus.rr.com" class="Email">alexlevy@columbus.rr.com</a>
+        <a href="https://www.linkedin.com/in/alexlevydesign/" target="_blank"><img src="images/linkedin-logo.svg" class="LinkedinLogo" alt="LinkedIn Logo"></a>
+    </div>
+</div>
+    </footer>
+    <script src="index.js"></script>
+    <!-- <script src="image-expand.js"></script> -->
+</body>
+</html>
