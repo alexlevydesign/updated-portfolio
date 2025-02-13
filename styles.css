@@ -24,7 +24,7 @@ b {
 }
 .PrimaryButton {
     border: none;
-    background-color: #0000ee;
+    background-color: #2156a6;
     color: #fff;
     padding: 1rem 1.75rem;
     font-weight: 600;
@@ -39,7 +39,7 @@ b {
     transition: .1s ease-in-out;
 }
 .PrimaryButton:not(:hover) {
-    background-color: #0000ee;
+    background-color: #2156a6;
     transition: .1s ease-in-out;
 }
 #skip {
@@ -201,16 +201,17 @@ b {
         /* height: ; */
         padding: 0rem;
         /* border-radius: 20; */
-        background-color: #0000ee;
+        background-color: #2156a6;
 }
 .NavBarLogo img {
-        background-color: #0000ee;
+        background-color: #2156a6;
         /* padding-left: 2em; */
         /* color: red; */
         /* padding-right: 2em; */
         /* padding-top: 2em; */
         padding: 1rem;
-        height: 4.5rem;
+        height: 5rem;
+        width: 5rem;
 }
 .NavBarLogo a {
 font-size: 0;
@@ -248,7 +249,7 @@ nav {
     text-decoration: none;
 }
 .NavBarLinks a:link, .NavBarLinks a:visited {
-    color: #0000ee;
+    color: #2156a6;
 }
 .NavBarLinks a:hover, .NavBarLinks a:active {
     color: #00005e;
@@ -270,7 +271,7 @@ nav {
 /* .CurrentPage::after{
     content:'';
     height: 2px;
-    background-color: #0000ee;
+    background-color: #2156a6;
     display: inline-block;
     top: 10%;
     left: 4%;
@@ -349,10 +350,10 @@ footer a:hover, footer a:active {
 
 /* #region TYPOGRAPHY */
 h1 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight: 700;
     width:fit-content;
-    border-bottom: 4px solid #0000ee;
+    border-bottom: 4px solid #2156a6;
     padding-bottom: 4px;
     margin-right: 10%;
     margin-top: 0;
@@ -363,7 +364,7 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #0000ee;
+    color: #2156a6;
     line-height: 120%;
 }
 h3 {
@@ -402,7 +403,7 @@ h4 + p, .Heading4 + p, .Heading4 + .ParagraphGap {
     font-size: 1.125rem;
 }
 .Link, .Link:visited {
-    color: #0000ee;
+    color: #2156a6;
     font-weight: 600;
 }
 .SmallH2 {
@@ -507,8 +508,8 @@ h4 + p, .Heading4 + p, .Heading4 + .ParagraphGap {
     color: initial;
     max-height: 500px;
     overflow: hidden;
-    /* border: #0000ee 0px solid inset; */
-    outline: #0000ee 0px solid;
+    /* border: #2156a6 0px solid inset; */
+    outline: #2156a6 0px solid;
     
     /* -webkit-box-shadow: 8px 4px 16px -9px rgba(0,0,0,0.25);
 -moz-box-shadow: 8px 4px 16px -9px rgba(0,0,0,0.25);
@@ -530,8 +531,8 @@ transition: .3s ease-in-out;
 -moz-box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
 box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.9);
 transition: .01s ease-in-out;
-/* border: #0000ee 1px solid inset; */
-outline: #0000ee 1px solid;
+/* border: #2156a6 1px solid inset; */
+outline: #2156a6 1px solid;
 
 
 
@@ -563,7 +564,7 @@ box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
 } */
 .ProjectCard:not(:hover) .FeaturedTag {
     transition: .3s ease-in-out;
-    color: #0000ee;
+    color: #2156a6;
 }
 .ProjectCardText {
     /* flex: 40%; */
@@ -583,7 +584,7 @@ box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
     gap: 1rem;
 }
 .FeaturedTag {
-    color: #0000ee;
+    color: #2156a6;
 }
 .ProjectCardInfo {
     display: flex;
@@ -685,7 +686,7 @@ form .Row {
         flex-direction: column;
     }
     .ProjectHeroListUL li {
-        border-bottom: #0000ee 1px solid;
+        border-bottom: #2156a6 1px solid;
         padding-top: .5rem;
         padding-bottom: .5rem;
         margin-top: 0 !important;
@@ -767,7 +768,7 @@ form .Row {
 
 }
 .ProjectHeroListUL li {
-    border-right: #0000ee 1px solid;
+    border-right: #2156a6 1px solid;
     padding-right: .5rem;
     padding-left: .5rem;
     margin-top: .5rem;
@@ -822,7 +823,7 @@ form .Row {
 .ProjectIntro hr {
     height: 1px;
     border: none;
-    background-color: #0000ee;
+    background-color: #2156a6;
 }
 .ProjectIntro hr:first-child {
     width: 50%;
@@ -961,7 +962,7 @@ gap: 3.5rem; /* Should be the same values as the margin-top and margin-bottom pr
     padding: .5rem;
     width: 50%;
     border: 1px black solid;
-    /* border-left: #0000ee 2px solid; */
+    /* border-left: #2156a6 2px solid; */
     display: flex;
     flex-direction: column;
 }
@@ -1004,7 +1005,7 @@ gap: 3.5rem; /* Should be the same values as the margin-top and margin-bottom pr
     padding: .5rem;
     /* width: 50%; */
     border: 1px black solid;
-    /* border-left: #0000ee 2px solid; */
+    /* border-left: #2156a6 2px solid; */
     display: flex;
     flex-direction: column;
 }
@@ -1085,7 +1086,7 @@ gap: 3.5rem; /* Should be the same values as the margin-top and margin-bottom pr
     transition: 0.6s ease;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #0000ee;
+    background-color: #2156a6;
     display: block;
   }
   
