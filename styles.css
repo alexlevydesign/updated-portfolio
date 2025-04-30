@@ -1177,6 +1177,9 @@ gap: 3.5rem; /* Should be the same values as the margin-top and margin-bottom pr
     flex-direction: column;
     gap: 1.5rem;
 }
+.ResumeSection li {
+    margin-left: .5rem;
+}
 
 .ResumeExperienceBlock {
     display: flex;

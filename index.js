@@ -3,10 +3,10 @@ const currentPage = document.getElementsByTagName("title")[0].innerHTML;
 // console.log(currentPage);
 
 //array of UI & UX pages
-const uxPages = ["The Newshouse Redesign", "Typeface Library Tool", "Optimal Assessment", "AI Financial Advisor", "Government Data Finder"]
+const uxPages = ["The Newshouse Redesign", "Typeface Library Tool", "Optimal Assessment", "AI Financial Advisor", "Government Data Finder", "Coding by Design"]
 
 //array of graphic design pages
-const graphicDesignPages = ["CuseHacks Branding", "Type Specimen", "Motion Reel", "Flavefull Branding", "Daily Orange Graphics", "Map Design"]
+const graphicDesignPages = ["CuseHacks Branding", "Type Specimen", "Motion Reel", "Flavefull Branding", "Daily Orange Graphics", "Map Design", "Community Geography Rebrand", "Petropolis Magazine"]
 
 // Compare current page to array of all UX pages
 uxPages.forEach(page => {
