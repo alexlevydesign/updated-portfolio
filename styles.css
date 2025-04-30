@@ -419,6 +419,22 @@ h4 + p, .Heading4 + p, .Heading4 + .ParagraphGap {
     font-size: 1.9rem;
 }
 
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}
+
 /* #endregion TYPOGRAPHY */
 
 /* #region HOMEPAGE */
@@ -596,7 +612,7 @@ box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
     overflow: hidden;
     padding: 2rem;
 }
-#OptimalAssessment .ProjectCardImage {
+#OptimalAssessment .ProjectCardImage, .CodingByDesign .ProjectCardImage {
     padding-bottom: 0;
 }
 .ProjectCardImage img {
@@ -953,6 +969,7 @@ gap: 3.5rem; /* Should be the same values as the margin-top and margin-bottom pr
 }
 .ProjectBodyImage img {
     max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .ProjectBodyImage h3 {
