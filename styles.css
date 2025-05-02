@@ -351,7 +351,7 @@ footer a:hover, footer a:active {
 
 /* #region TYPOGRAPHY */
 h1 {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
     font-weight: 700;
     width:fit-content;
     /* border-bottom: 4px solid #2156a6;
@@ -362,6 +362,7 @@ h1 {
     widows: 1;
     padding-right: 0 !important;
     color: #2156a6;
+    text-align: left !important;
 }
 h2 {
     font-size: 2rem;
@@ -380,6 +381,14 @@ h4, .Heading4 {
 p, .ParagraphGap ul, li {
     line-height: 140%;
     font-size: 1.1rem;
+}
+.LightH1 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.HeavyH1 {
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 :is(.ParentColumn) > h3 + p, :is(.ParentColumn) > h4 + p, :is(.ParentColumn) > h3 + img, :is(.ParentColumn) > h4 + img {
@@ -423,6 +432,27 @@ h4 + p, .Heading4 + p, .Heading4 + .ParagraphGap {
 
 
 @media only screen and (max-width: 1000px) {
+    .LightH1 {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .HeavyH1 {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .HeroHomeIntro {
+        display: flex;
+        justify-content: center;
+    }
+    .HeroHomeIntro h1 {
+        text-align: center !important;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: 2.25rem;
     }
