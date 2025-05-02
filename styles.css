@@ -364,6 +364,12 @@ h1 {
     color: #2156a6;
     text-align: left !important;
 }
+.HeroHomeIntro h1 {
+    line-height: 120%;
+}
+.LightH1 {
+    letter-spacing: 2%;
+}
 h2 {
     font-size: 2rem;
     font-weight: 700;
