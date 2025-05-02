@@ -650,7 +650,7 @@ box-shadow: 0px 4px 25px -9px rgba(0,0,0,0.25);
     overflow: hidden;
     padding: 2rem;
 }
-#OptimalAssessment .ProjectCardImage, .CodingByDesign .ProjectCardImage {
+#OptimalAssessment .ProjectCardImage {
     padding-bottom: 0;
 }
 .ProjectCardImage img {
