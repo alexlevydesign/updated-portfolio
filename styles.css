@@ -456,6 +456,13 @@ h4 + p, .Heading4 + p, .Heading4 + .ParagraphGap {
     h1 {
         font-size: 3rem;
     }
+    .HeroHomeIntro h1 {
+        padding-right: 0 !important;
+        margin-right: 0 !important
+    }
+    .HeroHomeIntro .SectionPadding {
+        padding: .5rem !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
