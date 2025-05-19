@@ -347,6 +347,9 @@ footer a:hover, footer a:active {
 .LinkedinLogo {
     width: 40px;
 }
+.Email {
+    color: #2156a6;
+}
 /* #endregion FOOTER */
 
 /* #region TYPOGRAPHY */
